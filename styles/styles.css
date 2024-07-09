@@ -390,18 +390,25 @@ h2{
         
         }
 
-        .absolute_define {  /* define main text*/ 
-          
-            top: 45vh;
-            display: flex;
-            max-width: 80vh;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: var(--colorA--);
-            justify-content: center;
-            font-size: 6vh;
-        }
+    
+    .hov{
+        
+    margin: 1em 0;
+    }
+
+
+    .absolute_define {  /* define main text*/ 
+      
+        top: 45vh;
+        display: flex;
+        max-width: 80vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: var(--colorA--);
+        justify-content: center;
+        font-size: 6vh;
+    }
 
 
 
