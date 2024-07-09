@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Gobold';
+    src: url(../font/Gobold\ Regular.otf);
+    font-variation-settings: 'wght' 400, 'wdth' 100;
+      
+}
+
+/* Todas las propiedades CSS */
+:root{
+    --main_font--:"myriad-variable", sans-serif;
+    --secondary_font--:"Gobold", sans-serif;
+    --primary_font--:  "myriad-variable", sans-serif;
+
+    --colorA--:#436EAF;
+    --colorN--: black;
+    --colorG--:#6A6055;
+
+    /*-------------------------COLOR PALLETE-------------------------*/
+    
+}
+
+
+/* First line------------------------------------*/
+*{
+    box-sizing: border-box;
+    font-family: var(--secondary_font--);
+    text-decoration: none;
+
+
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+  }
+
+
+header{
+    
+    height: 12vh;;
+    
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-grow: 1;
+    flex-direction: row;
+    background-color: var(--colorN--);
+}
+
+nav, ul,li {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    
+}
+
+
+
+nav a{
+    float: left;
+    
+    display: flex;
+    padding: 0.5em 1em;
+    flex: 1;
+    flex-grow: 1;
+    color: var(--colorN--);
+    margin: 0 1em ;
+    font-family: var(--primary_font--);
+    border-top: 2px  solid transparent;
+    border-bottom: 2px solid transparent;
+    
+}
+
+.sidebar{
+    position:fixed;
+    top: -1em;
+    right: 0;
+    height: 100vh;
+    width: 110vw;
+    z-index: 999;
+    background-color: var(--colorG--);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top:1rem ;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    
+    
+}
+
+
+.sidebar li {
+    width: 100%;
+    
+    padding:0.2em;
+   
+}
+
+.sidebar li button,.sidebar li a {
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+
+.menu-button{
+display: none;
+
+}
+
+#closebar{
+    justify-content: end;
+    margin-right: 5vh;
+    margin-top: 2.5vh;
+
+
+}
+
+button {
+background: none;
+cursor: pointer;
+}
+
+
+
+
+.hov{
+    display: flex;
+    flex-grow: 1;
+    flex: 1;
+    border-style: none;
+    border-bottom: 0 none ;
+    padding: 10px 15px;
+    transition: transform 0.5s ease-in-out;
+    color: white;
+}
+
+.hov:hover {
+    transition: border-bottom 1s ease-in-out;
+    border-bottom: 2px solid var(--colorA--);
+    
+}
+
+
+.iconimg{
+    max-height: 10vh;
+    margin-top: 2vh;
+    margin: 0 40px;
+    padding: 3px;
+    display: inline;
+    
+}
+
+
+
+
+/*---------------------------------Principal----------------------*/
+
+section{
+    background-color: var(--mint-cream);
+    margin: 0;
+    padding: 1px;
+ }
+
+
+
+
+
+.background{ /* DEfine images in background */
+    
+    padding: 0;
+    border: 0;
+    
+    
+    display: flex;
+    
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    z-index: -10;
+    position: relative;
+    
+    
+}
+.absolute_define {  /* define main text*/ 
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 40vw;
+    height: auto;
+    margin: auto;
+    color: var(--colorA--);
+    font-size: 6vw;
+}
+
+
+
+
+.absolute_2nd { /*First p*/
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 75vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    max-width: 70vw;
+   
+    
+}
+
+
+
+
+
+h2{
+    text-align: center;
+    font-family: var(--primary_font--);
+    margin: 0;
+    padding: 2.5em;
+    font-size: 2em;
+    font-weight: 300;
+    display: block;
+}
+
+
+#primertitulo{
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    color: white;
+
+}
+
+#objetivo{  /* Objetivo de la empresa */
+    max-width: 55vw;
+    margin: auto;
+    text-align: center;
+    
+    line-height: 2.5em;
+}
+
+/* Services----------------------------*/
+
+#aside_a {
+    display: grid;
+    grid-auto-flow: row;
+    align-items:start;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    
+    grid-template-columns: 35vw 35vw ;
+    grid-template-rows: 40vw ;
+    
+}
+.box_services{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 25vw;
+    height: auto;
+    
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    overflow: hidden;
+    border-radius: 22px;
+    position: relative;
+    border: var(--field-drab) 0.5px solid;
+    
+}
+
+.descripiton_services{
+    font-family: var(--primary_font--);
+    font-size: 1.4vw;
+    text-align: center;
+    margin-top: 1em;
+    color: var(--field-drab);
+    font-weight: 300;
+    
+   
+}
+
+.img_services{
+    width: 25vw;
+    
+    height: 300px;
+    transform-origin: bottom;
+    border-bottom-left-radius: 30px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.img_services:hover{
+    transform: scale(1.2);
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------Wtsp Button-----------------*/
+.whatsapp-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 5vw;
+    background-color: #25D366; /* Color de WhatsApp */
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+    fill: #128C7E; /* Cambia el color al hacer hover */
+}
+
+
+
+
+/* When screen is on mobile--------------------------------- */
+@media screen and (max-width: 900px)  {
+
+    header{
+        height: 9.5vh;
+        width: 100vw;
+        position: fixed ;
+        z-index: 50;
+    }
+
+    .hideonmobile{
+        display: none;
+    }
+
+    
+    .iconimg{
+        max-height: 7vh;
+        margin-top: 2vh;
+        margin: 1em;
+        margin-left: 3em;
+        padding: 0;
+    } }
+
+
+    .menu-button{
+        display: flex;
+        fill: var(--colorA--);
+        margin-right: 6vw;
+        margin-top: 1vh;
+        
+        }
+
+      
+
+
+
+ 
+
+
+
+  
+   
+   
+
+
+    
+
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        width: 8vh;
+        padding: 10px;
+        z-index: 10;
+    }
+    
