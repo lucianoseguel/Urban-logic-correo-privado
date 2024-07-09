@@ -40,5 +40,11 @@ sr.reveal('.box_services',{
             });
 
 
+sr.reveal('.sidebar',{
+    duration: 500,
+    origin: 'bottom',
+    distance: '200px'
+    });
+
         
 

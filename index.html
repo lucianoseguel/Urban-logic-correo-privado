@@ -19,14 +19,14 @@
             <ul class="sidebar">
                 <li onclick=hideSidebar() id="closebar"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
                 <li><a href="#"  class="hov" id="inicio">Home</a></li>
-                <li><a href="#contactus" class="hov" id="contacto"> Contacto</a></li>
+                <li onclick=hideSidebar()><a href="#contactus" class="hov" id="contacto"> Contacto</a></li>
                 
                 <li><a href="bodegas.html" class="hov" id="servicios">Nosotros</a></li> 
             </ul>
             <!--En dispositivo movil-->
             <ul>
             <li><a href="#" class="hov hideonmobile" id="inicio">Home</a></li>
-            <li><a href="#contactus" class="hov hideonmobile" id="contacto">Contacto</a></li>
+            <li ><a href="#contactus" class="hov hideonmobile" id="contacto">Contacto</a></li>
             <li><a href="bodegas.html" class="hov hideonmobile" id="servicios">Nosotros</a></li>
             <li onclick = showSidebar() class="menu-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
 
@@ -42,7 +42,36 @@
     <img src="images/carrete principal.gif" alt="Logicistica" class="background">
     <p id="primertitulo" class="absolute_2nd" >CORREO PRIVADO</p>
 </div>
+<section>
+    <h2 id="objh2" >Servicios</h2>
+    <p id="objetivo">Brindamos servicios de calidad y soluciones en lógistica a la altura de 
+        nuestros clientes y sus necesidades.
 
+    </p>
+   
+
+
+<!--Whats next-->
+
+<aside id="aside_a">
+        
+    <!--Airport city in out-->
+
+
+    <div class="box_services"> 
+       <a href="bodegas.html"> <img class="img_services" src="images/Paqueteria.jpg" alt="Paqueteria" >
+        <p id="box1" class="descripiton_services" >PAQUETERÍA</p></a>
+    </div>
+
+    <div class="box_services"> 
+        <a href="aventuras.html"> <img class="img_services" src="images/Postal.jpg" alt="Postal" >
+         <p id="box2" class="descripiton_services">CORREO POSTAL</p></a>
+     </div>
+
+   
+   
+</aside>
+</section>
     </main>
     <script src="scripts/index.js"></script>
     <script src="scripts/showSidebar.js"></script>

@@ -87,7 +87,7 @@ nav a{
 .sidebar{
     position:fixed;
     top: -1em;
-    right: 0;
+    right: -100vw;
     height: 100vh;
     width: 110vw;
     z-index: 999;
@@ -99,7 +99,7 @@ nav a{
     justify-content: flex-start;
     padding-top:1rem ;
     font-size: 20px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease-in-out;
     
     
 }
@@ -175,7 +175,7 @@ cursor: pointer;
 /*---------------------------------Principal----------------------*/
 
 section{
-    background-color: var(--mint-cream);
+    background-color: whitesmoke;
     margin: 0;
     padding: 1px;
  }
@@ -189,11 +189,11 @@ section{
     padding: 0;
     border: 0;
     
-    
+   
     display: flex;
     
     width: 100vw;
-    height: 90vh;
+    height: 95vh;
     object-fit: cover;
     z-index: -10;
     position: relative;
@@ -256,11 +256,15 @@ h2{
 
 }
 
+#objh2{
+    color: var(--colorA--);
+}
+
 #objetivo{  /* Objetivo de la empresa */
     max-width: 55vw;
     margin: auto;
     text-align: center;
-    
+    font-family: var(--main_font--);
     line-height: 2.5em;
 }
 
@@ -278,7 +282,9 @@ h2{
     grid-template-rows: 40vw ;
     
 }
+
 .box_services{
+
     display: flex;
     flex: 1;
     flex-wrap: wrap;
@@ -293,19 +299,31 @@ h2{
     overflow: hidden;
     border-radius: 22px;
     position: relative;
-    border: var(--field-drab) 0.5px solid;
+    border: var(--colorG--) 0.5px solid;
+    
+}
+
+
+.img_services:hover {
+    
+    background-color: var(--colorA--);
     
 }
 
 .descripiton_services{
-    font-family: var(--primary_font--);
+    font-family: var(--secondary_font--);
     font-size: 1.4vw;
     text-align: center;
     margin-top: 1em;
-    color: var(--field-drab);
+    color: var(--colorG--);
     font-weight: 300;
     
    
+}
+
+.img_services:hover ~ .descripiton_services:hover{
+
+    color: white;
 }
 
 .img_services{
@@ -392,16 +410,19 @@ h2{
 
     
     .hov{
-        
+
     margin: 1em 0;
     }
+
+
+    
 
 
     .absolute_define {  /* define main text*/ 
       
         top: 45vh;
         display: flex;
-        max-width: 80vh;
+        
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -411,6 +432,54 @@ h2{
     }
 
 
+     /* Cuerpo -------------------------------*/
+ #aside_a{
+        
+        
+    display: block;
+    justify-content: center;
+   
+        
+    }
+    section{
+        padding: 10px;
+    }
+
+
+    
+
+
+
+    .box_services{
+        display: block;
+        box-sizing:content-box;
+        width: 80vw;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin: 25px auto;
+        border-radius: 22px;
+        position: relative;
+        border: var(--field-drab) 0.5px solid;
+      }
+
+
+    .img_services{
+        box-sizing: border-box;
+        width: 80vw;
+        height: 35vh;
+        margin:  auto;
+        
+        border-bottom-left-radius: 30px;
+        
+    }
+    .descripiton_services{
+        font-family: var(--main_font--);
+        font-size: 3vh;
+        text-align: center;
+        margin: 1em;
+        color: var(--colorA--);
+    }
 
  
 
