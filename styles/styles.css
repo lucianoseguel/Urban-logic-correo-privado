@@ -432,8 +432,11 @@ h2{
     }
 
 
-     /* Cuerpo -------------------------------*/
- #aside_a{
+
+
+    
+/* Cuerpo -------------------------------*/
+#aside_a{
         
         
     display: block;
@@ -474,11 +477,10 @@ h2{
         
     }
     .descripiton_services{
-        font-family: var(--main_font--);
+        font-family: var(--primary_font--);
         font-size: 3vh;
         text-align: center;
         margin: 1em;
-        color: var(--colorA--);
     }
 
  
