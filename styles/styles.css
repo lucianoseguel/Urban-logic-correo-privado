@@ -87,21 +87,34 @@ nav a{
 .sidebar{
     position:fixed;
     top: -1em;
-    right: -100vw;
+    right: -130vw;
     height: 100vh;
     width: 110vw;
     z-index: 999;
-    background-color: var(--colorG--);
+    background-color: var(--colorN--);
     backdrop-filter: blur(10px);
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding-top:1rem ;
     font-size: 20px;
-    transition: transform 0.5s ease-in-out;
+    opacity: 80%;
+    transition: all 0.3s ease-in;
     
     
+}
+
+.sidebar--show{
+    
+    right: 0;
+    transition: all 0.3s ease-in;
+}
+
+.sidebar--hidden{
+    
+    right: -110vw;
+    transition: all 0.3s ease-in;
 }
 
 
@@ -115,6 +128,7 @@ nav a{
 .sidebar li button,.sidebar li a {
     align-content: center;
     justify-content: center;
+    transition: all 0.3s ease-in;
 }
 
 
@@ -124,15 +138,19 @@ nav a{
     
 display: none;
 
+
 }
 
 #closebar{
     justify-content: end;
     margin-right: 5vh;
     margin-top: 2.5vh;
-
+    fill: var(--colorA--);
+    
 
 }
+
+
 
 button {
 background: none;

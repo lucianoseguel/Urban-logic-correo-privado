@@ -1,11 +1,32 @@
+//PRimer intento de nav bar
+const menuButton = document.getElementById('menu-button')
+const closebar = document.getElementById('closebar')
 
+
+const ullinks = document.getElementById('sidebar')
+
+
+const mostrar_ocultar_nav  = () => {
+    ullinks.classList.toggle("sidebar--show")
+    menuButton.classList.toggle('menu-button')
+
+   
+
+}
+
+menuButton.addEventListener("click", mostrar_ocultar_nav)
+closebar.addEventListener("click", mostrar_ocultar_nav)
+
+
+
+
+/*
 function showSidebar(){
     const sidebar = document.querySelector ('.sidebar')
     sidebar.style.display = 'flex'
 
     
     
-    sidebar.style.right =0
 
     
     
@@ -33,3 +54,7 @@ function hideSidebar(){
 document.getElementById('toggleMenu').addEventListener('click', function() {
     document.querySelector('nav').classList.toggle('.sidebar');
 });
+
+*/
+
+
