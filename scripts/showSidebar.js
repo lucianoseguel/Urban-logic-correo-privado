@@ -17,11 +17,6 @@ const mostrar_ocultar_nav  = () => {
 
 
 
-menuButton.addEventListener("click", mostrar_ocultar_nav)
-closebar.addEventListener("click", mostrar_ocultar_nav)
-
-
-
 
 /*
 function showSidebar(){
