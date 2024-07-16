@@ -7,11 +7,22 @@
       
 }
 
+
+@font-face {
+    font-family: "Myriad Variable Concept";
+    src: url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.eot");
+    src: url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.svg#Myriad Variable Concept")format("svg");
+}
+
 /* Todas las propiedades CSS */
 :root{
-    --main_font--:"myriad-variable", sans-serif;
+    --main_font--:"Myriad Variable Concept", sans-serif;
     --secondary_font--:"Gobold", sans-serif;
-    --primary_font--:  "myriad-variable", sans-serif;
+    --primary_font--:  "Myriad Variable Concept", sans-serif;
 
     --colorA--:#436EAF;
     --colorN--: black;
@@ -242,6 +253,13 @@ section{
     align-content: center;
 }
 
+#subtitle{
+font-family: var(--primary_font--) ;
+font-weight: 500;
+
+}
+
+
 .maintext{
     margin: auto;
     padding: 0;
@@ -250,6 +268,10 @@ section{
 
 }
 
+#rnsp{
+    font-size:large;
+
+}
 
 
 
@@ -280,6 +302,7 @@ h2{
 #objh2{
     color: var(--colorA--);
     font-weight: 550;
+    font-family: var(--secondary_font--);
 }
 
 #objetivo{  /* Objetivo de la empresa */
