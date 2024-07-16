@@ -458,7 +458,7 @@ footer hr{
 
 
 /* When screen is on mobile--------------------------------- */
-@media screen and (max-width: 900px)  {
+@media screen and (max-width: 550px)  {
 
     header{
         height: 9.5vh;
