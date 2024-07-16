@@ -372,9 +372,9 @@ h2{
 
 footer{
     background-color: var(--colorN--);
-    margin: auto;
-    padding: 15px;
-    padding-left: 15vw;
+    
+    
+    
     display: grid;
     
     justify-items: left;
@@ -392,11 +392,15 @@ footer{
     flex-direction: row;
 }
 
+
+
 footer a{
     display: flex;
     align-items: center;
+    max-width: 3vw;
+    margin: 0 10px;
+
     
-   
     fill: var(--colorA--);
     
     
@@ -406,20 +410,21 @@ footer a{
 
 
 
-footer p{
-    margin-left:  6px;
-
-
-}
 
 #parraffooter{
     max-width: 400px;
     font-size: larger;
     line-height: 2;
     color: white;
+    
 }
 
-
+footer hr{
+    margin: auto;
+    width: 100vw;
+    display: block;
+    
+}
 
 
 
