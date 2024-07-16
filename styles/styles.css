@@ -279,6 +279,7 @@ h2{
 
 #objh2{
     color: var(--colorA--);
+    font-weight: 550;
 }
 
 #objetivo{  /* Objetivo de la empresa */
@@ -386,17 +387,24 @@ footer{
     font-size:xx-large;
 }
 
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+}
 
 footer a{
     display: flex;
     align-items: center;
-    color: var(--dun);
+    
    
-    fill: var(--dun);
+    fill: var(--colorA--);
     
     
 
 }
+
+
+
 
 footer p{
     margin-left:  6px;
