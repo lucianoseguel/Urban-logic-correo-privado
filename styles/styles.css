@@ -27,7 +27,7 @@
     box-sizing: border-box;
     font-family: var(--secondary_font--);
     text-decoration: none;
-
+    margin: 0;
 
 }
 
@@ -35,9 +35,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    align-content: center;
     overflow-x: hidden;
-    scroll-behavior: smooth;
     
   }
 
@@ -86,7 +84,7 @@ nav a{
 
 .sidebar{
     position:fixed;
-    top: -1em;
+    top: 0;
     right: -130vw;
     height: 100vh;
     width: 110vw;
@@ -99,7 +97,7 @@ nav a{
     justify-content: flex-start;
     padding-top:1rem ;
     font-size: 20px;
-    opacity: 80%;
+    opacity: 0.95;
     transition: all 0.3s ease-in;
     
     
@@ -144,7 +142,7 @@ display: none;
 #closebar{
     justify-content: end;
     margin-right: 5vh;
-    margin-top: 2.5vh;
+    margin-top: 3vh;
     fill: var(--colorA--);
     
 
@@ -202,55 +200,58 @@ section{
 
 
 
-.background{ /* DEfine images in background */
-    
-    padding: 0;
-    border: 0;
-    
-   
-    display: flex;
-    
+#portbackground{ /* DEfine images in background */
+    display:grid;
+    margin: 0;
     width: 100vw;
-    height: 95vh;
-    object-fit: cover;
-    z-index: -10;
-    position: relative;
-    
-    
-}
-.absolute_define {  /* define main text*/ 
-    position: absolute;
-    display: flex;
+    height: 90vh;
+    padding: 0;
     text-align: center;
-    align-items: center;
-    justify-content: space-evenly;
-    top: 50vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 40vw;
-    height: auto;
-    margin: auto;
-    color: var(--colorA--);
-    font-size: 6vw;
-}
-
-
-
-
-.absolute_2nd { /*First p*/
-    position: absolute;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-evenly;
-    top: 75vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: auto;
-    max-width: 70vw;
+    background-image: url(../images/carreteprincipal.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-template-columns: 30vw 30vw;
+    grid-template-rows: 20vw ;
+    justify-content: center;
+    align-content: center;
+    
    
     
+    
+    
 }
+
+#logoprincipal {  /* define main text*/ 
+    
+    display: block;
+    
+   
+    width: 20vw;
+    
+    
+}
+
+
+#portbackground div{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    align-content: center;
+}
+
+.maintext{
+    margin: auto;
+    padding: 0;
+    display: inline;
+    font-size: auto;
+
+}
+
+
+
+
+
 
 
 
@@ -364,6 +365,49 @@ h2{
 }
 
 
+/* footer -----------------------------------*/
+
+footer{
+    background-color: var(--colorN--);
+    margin: auto;
+    padding: 15px;
+    padding-left: 15vw;
+    display: grid;
+    
+    justify-items: left;
+    color: var(--dun);
+   
+  
+    
+}
+#contactus{
+    font-size:xx-large;
+}
+
+
+footer a{
+    display: flex;
+    align-items: center;
+    color: var(--dun);
+   
+    fill: var(--dun);
+    
+    
+
+}
+
+footer p{
+    margin-left:  6px;
+
+
+}
+
+#parraffooter{
+    max-width: 400px;
+    font-size: larger;
+    line-height: 2;
+    color: white;
+}
 
 
 
@@ -425,7 +469,7 @@ h2{
         fill: var(--colorA--);
         margin-right: 6vw;
         
-        margin-top: 1vh;
+        margin-top: 0.5vh;
         
         }
 
@@ -433,24 +477,62 @@ h2{
     .hov{
 
     margin: 1em 0;
-    }
-
-
     
-
-
-    .absolute_define {  /* define main text*/ 
-      
-        top: 45vh;
-        display: flex;
-        
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: var(--colorA--);
-        justify-content: center;
-        font-size: 6vh;
     }
+
+/*-------PRINCIPAL-------------*/
+
+#portbackground{ /* DEfine images in background */
+    display:grid;
+    margin: 0;
+    width: 100vw;
+    height: 95vh;
+    padding: 0;
+    text-align: center;
+    background-image: url(../images/carreteprincipal.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-template-columns: 80vw;
+    grid-template-rows:  40vh 15vh;
+    justify-items: center;
+    align-items: center;
+    
+   
+    
+    
+    
+}
+
+#logoprincipal {  /* define main text*/ 
+    
+    display: flex;
+    
+   
+    width: 20vh;
+    
+    
+}
+
+
+#portbackground div{
+    color: white;
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    margin: auto;
+}
+
+.maintext{
+   
+    padding: 0;
+    display: inline;
+    font-size: auto;
+    
+}
+
 
 
 
@@ -462,7 +544,7 @@ h2{
         
     display: block;
     justify-content: center;
-   
+    
         
     }
     section{
@@ -478,11 +560,12 @@ h2{
         display: block;
         box-sizing:content-box;
         width: 80vw;
-        height: auto;
+        height: 15em;
         align-items: center;
         justify-content: center;
-        margin: 25px auto;
+        margin: 4em auto;
         border-radius: 22px;
+        
         position: relative;
         border: var(--field-drab) 0.5px solid;
         
@@ -492,10 +575,10 @@ h2{
     .img_services{
         box-sizing: border-box;
         width: 80vw;
-        height: 35vh;
+        height: auto;
         margin:  auto;
         
-        border-bottom-left-radius: 30px;
+        
         
     }
     .descripiton_services{
@@ -507,11 +590,6 @@ h2{
 
  
 
-
-
-  
-   
-   
 
 
     

@@ -4,15 +4,18 @@ const closebar = document.getElementById('closebar')
 
 
 const ullinks = document.getElementById('sidebar')
-
+const contact = document.getElementById('contacto')
 
 const mostrar_ocultar_nav  = () => {
     ullinks.classList.toggle("sidebar--show")
+    
     menuButton.classList.toggle('menu-button')
-
+    
    
 
 }
+
+
 
 menuButton.addEventListener("click", mostrar_ocultar_nav)
 closebar.addEventListener("click", mostrar_ocultar_nav)

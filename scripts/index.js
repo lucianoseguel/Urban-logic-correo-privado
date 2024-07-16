@@ -1,19 +1,21 @@
 window.sr = ScrollReveal();
 
 // TITULO
-    sr.reveal('h1',{
-    duration: 1000,
+    
+
+    sr.reveal('#maintext',{
+    duration: 2000,
     origin: 'bottom',
-    distance: '-50px'
+    distance: '150px'
     });
 
 
 
-
 //TEXTO 1
-    sr.reveal('#primertitulo',{
+    sr.reveal('#logoprincipal',{
             duration: 1000,
-            
+            origin: 'bottom',
+            distance: '50px'
             });
 
 
@@ -21,6 +23,8 @@ window.sr = ScrollReveal();
 
 //H2 
 
+
+/*
 sr.reveal('h2',{
     duration: 700,
     origin: 'bottom',
@@ -47,4 +51,4 @@ sr.reveal('.sidebar',{
     });
 
         
-
+*/
