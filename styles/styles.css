@@ -416,12 +416,14 @@ footer a{
     font-size: larger;
     line-height: 2;
     color: white;
+    font-family: var(--primary_font--);
+    text-align: left;
     
 }
 
 footer hr{
     margin: auto;
-    width: 100vw;
+    width: 90vw;
     display: block;
     
 }
@@ -554,7 +556,7 @@ footer hr{
 
     
 /* Cuerpo -------------------------------*/
-#aside_a{
+    #aside_a{
         
         
     display: block;
@@ -604,10 +606,19 @@ footer hr{
     }
 
  
-
-
-
+    footer a{
+        display: flex;
+        align-items: center;
+        max-width: 4vh;
+        margin: 0 10px;
     
+        
+        fill: var(--colorA--);
+    }
+        
+    
+
+
 
     .whatsapp-btn {
         position: fixed;
@@ -618,6 +629,7 @@ footer hr{
         z-index: 10;
     }
     
+
 
 
 }
