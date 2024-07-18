@@ -304,6 +304,7 @@ h2{
     color: var(--colorA--);
     font-weight: 550;
     font-family: var(--secondary_font--);
+    display: block;
 }
 
 #objetivo{  /* Objetivo de la empresa */
@@ -324,7 +325,7 @@ h2{
     justify-items: center;
     justify-content: space-evenly;
     
-    margin-bottom: 0;
+    margin-bottom: 100px;
     grid-template-columns: 35vw 35vw ;
     grid-template-rows: 40vw ;
     
@@ -371,19 +372,55 @@ h2{
     font-family: var(--secondary_font--);
     font-size: 1.4vw;
     text-align: center;
-    margin-top: 1em;
+    
     fill: var(--colorA--);
     font-weight: 300;
     
    
 }
 
+
+.box_services ul{
+    margin: 2rem 0;
+    
+    list-style-type: none;
+    padding-left: 2rem;
+    
+    display: flex;
+    
+    flex-direction: column;
+    
+}
+
+
+
+
+.box_services li{
+    font-family: var(--main_font--);
+    text-align: left;
+    display: block;
+    padding-left: 2rem;
+    background-image: url(../images/viñeta.png);
+    margin: 1em 0;
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    max-width: 230px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
 /* titulo de ubicacion de envios */
 #obj2h2{
     color: var(--colorA--);
     font-weight: 550;
     font-family: var(--secondary_font--);
-    margin: 0;
+    margin-top: 20vh;
+    
     padding: 0;
 
 }
@@ -450,9 +487,10 @@ h2{
 
 
 .generalmap p{
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
+    display: block;
+   
+    padding: 1em;
+    width: 500px;
     font-family: var(--main_font--);
     font-weight: 400;
     font-size: large;
@@ -695,9 +733,11 @@ footer hr{
 
     .box_services{
         display: flex;
-        box-sizing:content-box;
+        flex-direction: column;
+        
+       padding-top: 20px;
         width: 80vw;
-        height: 15em;
+        
         align-items: center;
         justify-content: center;
         margin: 4em auto;
@@ -714,6 +754,7 @@ footer hr{
             width: 80px;
             padding: 15px;
             display: inline;
+            
             margin: auto;
             border: 2px solid var(--colorA--);
             border-radius: 50%;
@@ -728,9 +769,21 @@ footer hr{
 
     .descripiton_services{
         font-family: var(--secondary_font--);
+
         font-size: 3vh;
         text-align: center;
-        margin: 1em;
+        margin: 1em auto 0 auto;
+        display: inline;
+        
+        
+    }
+
+
+
+    .box_services ul{
+        padding: 0;
+        max-width: 65vw;
+
     }
 
 
@@ -756,7 +809,12 @@ footer hr{
     
     
 }
+
+
 /*--------------- contenedor del svg display none------------*/
+
+
+
 .svgmap{
     
     max-width: 100vw;
