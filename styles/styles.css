@@ -409,7 +409,18 @@ h2{
 }
 
 
-
+.solitbutton{
+   
+    color: whitesmoke;
+    text-align: center;
+    font-family: var(--main_font--);
+    font-weight: 700;
+    cursor: pointer;
+    margin: 2em;
+    padding: 10px 15px 7px 15px;
+    background-color: var(--colorA--);
+    border-radius: 10px;
+}
 
 
 
