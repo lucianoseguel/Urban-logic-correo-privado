@@ -19,6 +19,32 @@ window.sr = ScrollReveal();
             });
 
 
+sr.reveal('#encomienda',{
+            duration: 900,
+            origin: 'left',
+            distance: '200px'
+            });
+
+sr.reveal('#postal',{
+    duration: 900,
+    origin: 'right',
+    distance: '200px'
+    });
+    
+
+
+    sr.reveal('.svgmap',{
+        duration: 900,
+        origin: 'right',
+        distance: '200px'
+        });
+        
+    sr.reveal('#mappng',{
+        duration: 900,
+        origin: 'right',
+        distance: '200px'
+        });
+            
 
 
 //H2 
@@ -37,11 +63,7 @@ sr.reveal('#objetivo',{
         distance: '150px'
         });
     
-sr.reveal('.box_services',{
-            duration: 500,
-            origin: 'bottom',
-            distance: '200px'
-            });
+
 
 
 sr.reveal('.sidebar',{

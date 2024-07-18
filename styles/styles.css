@@ -66,6 +66,8 @@ header{
     background-color: var(--colorN--);
 }
 
+
+
 nav, ul,li {
     display: flex;
     text-align: center;
@@ -420,6 +422,13 @@ h2{
     padding: 10px 15px 7px 15px;
     background-color: var(--colorA--);
     border-radius: 10px;
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.3) ;
+    transition: all 0.3s ease;
+
+}
+
+.solitbutton:hover{
+    background-color: var(--colorG--);
 }
 
 
@@ -427,10 +436,11 @@ h2{
 
 /* titulo de ubicacion de envios */
 #obj2h2{
+    display: block;
     color: var(--colorA--);
     font-weight: 550;
     font-family: var(--secondary_font--);
-    margin-top: 20vh;
+    margin-top: 40vh;
     
     padding: 0;
 
@@ -798,7 +808,16 @@ footer hr{
     }
 
 
+
+
+
 /*-------------------MAPA------------------------*/
+
+#obj2h2{
+    margin-top: 0;
+}
+
+
 .generalmap{
 
     display: flex;
