@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Logic | Contacto</title>
+    <link rel="stylesheet" href="styles/forms.css">
+    <script src="scripts/scrollreveal.js"></script>
+    <link rel="icon" href="images/icono.png" type="image/png">
+</head>
+<body>
+    <a href="https://wa.link/8a3424" target="_blank"><img class="whatsapp-btn" src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="wsp"></a>
+    <header >
+        <a href="#"><img class="iconimg" src="images/logo.png" alt="icon"></a>
+
+
+        <!---------------------------------------------------------NAV------------------------------------------------------------->
+    
+        <nav>
+            
+            <!--En Escritorio-->
+            <ul class="sidebar "  id="sidebar" >
+                <li  id="closebar" onclick=mostrar_ocultar_nav()><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li onclick=mostrar_ocultar_nav()><a href="#"  class="hov" id="inicio">Home</a></li>
+                <li onclick=mostrar_ocultar_nav()><a href="#paqueteriaypostal" class="hov" id="contacto"> Servicios</a></li>
+                <li onclick=mostrar_ocultar_nav()><a href="#obj2h2" class="hov" id="servicios"> Destinos </a></li> 
+                
+                <li onclick=mostrar_ocultar_nav()><a href="#nosotros" class="hov" id="servicios">Nosotros</a></li> 
+
+            </ul>
+            <!--En dispositivo movil-->
+            <ul>
+            <li><a href="#" class="hov hideonmobile" id="inicio">Home</a></li>
+            <li ><a href="#paqueteriaypostal" class="hov hideonmobile" id="contacto">Servicios</a></li>
+            <li><a href="#nosotros" class="hov hideonmobile" id="servicios">Nosotros</a></li>
+            <li><a href="#obj2h2" class="hov hideonmobile" id="servicios"> Destinos </a></li> 
+            <li onclick="mostrar_ocultar_nav()" class="menu-button" id="menu-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+
+<!---------------------------------------------------------PORTADA------------------------------------------------------------->
+    
+
+<div id="portbackground">
+     
+      <div id="maintext">
+      
+      <br><br>
+      <h2 class="maintext" id="subtitle">Contacto a Urban logic MENDOZA <h2></div>
+   
+</div>
+
+<section>
+    <h2 id="objh2" >contactá y cotizá con nosotros</h2>
+   
+    <p id="paqueteriaypostal"></p>
+
+<!--Whats next-->
+
+<!---------------------------------------------------------CAJAS Y SERVICIOS PRINCIPALES------------------------------------------------------------->
+    
+
+<aside id="aside_a">
+
+    <p id="objetivo">
+        Por favor, completa el siguiente formulario para ponerte en contacto con nosotros. 
+        En Urban Logic, nos comprometemos a mantenerte informado sobre el estado de tus envíos. Ofrecemos notificaciones de seguimiento y consulta de estado del pedido para que siempre sepas dónde está tu paquete y cuándo llegará 
+        a su destino. No dudes en contactarnos si tienes alguna pregunta o necesitas asistencia adicional.
+
+    </p>
+    
+    <form action="/submit_contact" method="post">
+        <legend>envianos tus datos</legend>
+        <label for="name">Nombre y Apellido</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tel">Teléfono</label>
+        <input type="tel" id="tel" name="tel" required>
+        
+
+
+        <label for="tipo">Servicio</label>
+        <select type="" id="tipo" name="tipo" required>
+            <option value="selec"></option>
+                <option value="Correo Postal">Correo postal</option>
+                <option value="Paqueteria">Encomienda / Paquetería</option>
+                <option value="Logística">Logística</option>
+                
+        </select>
+        
+        <label for="Mensaje">Comentarios:</label>
+        <textarea id="Mensaje" name="Mensaje" rows="3" ></textarea>
+        
+        <button type="submit" class="solitbutton">Solicitar Cotización</button>
+    </form>
+
+    
+    
+
+   
+
+    
+
+   
+   
+</aside>
+
+
+
+
+
+
+
+</section>
+    </main>
+
+
+
+
+
+    <!---------------------------------------------------------FOOTER------------------------------------------------------------->
+    <footer>
+        <p id="nosotros"></p>
+        <h2 id="objh2" class=> Quíenes somos</h2>
+        
+        <div id="aboutus">
+        <p>En Urban Logic, nos especializamos en ofrecer servicios de calidad en paquetería y soluciones logísticas, superando las expectativas de nuestros clientes con eficiencia. Nuestra misión es proporcionar una<span id="span1"> experiencia de servicio excepcional, con seguimiento de envío y notificaciones de estado y avance.</span> Nos esforzamos por ser líderes en crecimiento, con un equipo comprometido y mejoras continuas en nuestros procesos.</p>
+        <!-----<img src="images/chica con caja.png" alt="Recepcion en puerta"> ---->
+        <br>
+        
+        <p>Nuestros valores incluyen la <span id="span1"> conducta ética, la sencillez y la responsabilidad social. Valoramos la honestidad e integridad en el trabajo</span> en equipo y la atención al cliente. Creemos en procedimientos simples y eficaces, y consideramos el impacto de nuestras actividades en la comunidad y el medio ambiente. En Urban Logic, nos dedicamos a la excelencia y a hacer una diferencia positiva en la industria y la sociedad.
+
+        </p>
+        </div>
+
+
+        <div>
+
+
+
+
+
+        </div>
+       <hr style="margin: 3em auto; line-height: 5px;">
+        <div class="socialmedia">
+            
+ <br><br>
+            
+            <!--Facebook-->
+        <a href="#"> <?xml version="1.0"?> <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"/></svg></a>
+        <!--Intagram-->
+        <a href="https://www.instagram.com/centrologistico.urbanlogic?igsh=MW1rNnBsd3lmbmR6cQ=="><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></svg></a>
+
+        <!--CORREO-->
+        <a href="mailto:urbanlogicsrl@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="37" preserveAspectRatio="xMidYMid meet" version="1.0"><path  d="M 187.5 0 C 83.925781 0 0 83.925781 0 187.5 C 0 291.074219 83.925781 375 187.5 375 C 291.074219 375 375 291.074219 375 187.5 C 375 83.925781 291.074219 0 187.5 0 Z M 77.175781 111.601562 C 77.25 111.523438 77.398438 111.449219 77.476562 111.375 C 77.550781 111.300781 77.625 111.300781 77.699219 111.226562 C 77.851562 111.148438 77.925781 111.074219 78.074219 111 C 78.148438 110.925781 78.226562 110.925781 78.375 110.851562 C 78.523438 110.773438 78.601562 110.699219 78.75 110.699219 C 78.824219 110.625 78.898438 110.625 79.050781 110.550781 C 79.199219 110.476562 79.273438 110.476562 79.425781 110.398438 C 79.5 110.398438 79.648438 110.324219 79.726562 110.324219 C 79.875 110.25 79.949219 110.25 80.101562 110.175781 C 80.175781 110.175781 80.324219 110.101562 80.398438 110.101562 C 80.550781 110.023438 80.699219 110.023438 80.851562 110.023438 C 80.925781 110.023438 81 109.949219 81.148438 109.949219 C 81.300781 109.949219 81.449219 109.875 81.601562 109.875 C 81.675781 109.875 81.75 109.875 81.824219 109.875 C 82.050781 109.875 82.273438 109.875 82.574219 109.875 L 295.800781 109.875 C 296.023438 109.875 296.25 109.875 296.550781 109.875 C 296.625 109.875 296.699219 109.875 296.773438 109.875 C 296.925781 109.875 297.074219 109.949219 297.226562 109.949219 C 297.300781 109.949219 297.375 110.023438 297.523438 110.023438 C 297.675781 110.023438 297.824219 110.101562 297.976562 110.101562 C 298.050781 110.101562 298.199219 110.175781 298.273438 110.175781 C 298.425781 110.25 298.574219 110.25 298.648438 110.324219 C 298.726562 110.324219 298.875 110.398438 298.949219 110.398438 C 299.101562 110.476562 299.175781 110.476562 299.324219 110.550781 C 299.398438 110.625 299.476562 110.625 299.625 110.699219 C 299.773438 110.773438 299.851562 110.851562 300 110.851562 C 300.074219 110.925781 300.148438 110.925781 300.300781 111 C 300.449219 111.074219 300.523438 111.148438 300.675781 111.226562 C 300.75 111.300781 300.824219 111.300781 300.898438 111.375 C 301.050781 111.449219 301.125 111.523438 301.199219 111.601562 C 301.273438 111.675781 301.351562 111.675781 301.351562 111.75 L 195.226562 217.726562 C 193.574219 219.375 191.398438 220.273438 189.148438 220.273438 C 186.824219 220.273438 184.648438 219.375 183.074219 217.726562 L 77.023438 111.75 C 77.101562 111.675781 77.101562 111.675781 77.175781 111.601562 Z M 73.800781 132.976562 L 128.476562 187.648438 L 73.800781 242.324219 Z M 295.726562 265.351562 L 82.574219 265.351562 C 80.550781 265.351562 78.601562 264.601562 77.101562 263.398438 L 140.625 199.875 L 170.699219 229.949219 C 175.574219 234.824219 182.101562 237.523438 189 237.523438 C 195.898438 237.523438 202.425781 234.824219 207.300781 229.949219 L 237.523438 199.726562 L 301.125 263.324219 C 299.773438 264.601562 297.824219 265.351562 295.726562 265.351562 Z M 304.351562 242.023438 L 249.898438 187.5 L 304.425781 132.976562 L 304.425781 242.023438 Z M 304.351562 242.023438 " />
+        </svg></a>
+
+
+
+        </div>
+       
+
+            <br><br><br>
+          <p id="copyright"> &copy; 2024 Urban Logic Centro Logístico MENDOZA </p>
+
+          
+    </footer>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/showSidebar.js"></script>
+    <script src="scripts/datos.js"></script>
+    <script src="scripts/redirigir.js"></script>
+    
+</body>
+</html>

@@ -434,7 +434,7 @@ h2{
 
 
 
-/* titulo de ubicacion de envios */
+/* ---------------------------------------titulo de ubicacion de envios */
 #obj2h2{
     display: block;
     color: var(--colorA--);
@@ -565,6 +565,17 @@ footer{
     font-size: large;
     line-height: 30px;
 }
+
+#aboutus img{
+    display: flex;
+    float: right;
+    max-width: 22vw;
+    padding: 1em;
+    clear: both;
+    border-radius: 20px;
+}
+
+
 
 
 #contactus{

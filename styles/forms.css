@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Gobold';
+    src: url(../font/Gobold\ Regular.otf);
+    font-variation-settings: 'wght' 400, 'wdth' 100;
+      
+}
+
+
+@font-face {
+    font-family: "Myriad Variable Concept";
+    src: url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.eot");
+    src: url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.svg#Myriad Variable Concept")format("svg");
+}
+
+/* Todas las propiedades CSS */
+:root{
+    --main_font--:"Myriad Variable Concept", sans-serif;
+    --secondary_font--:"Gobold", sans-serif;
+    --primary_font--:  "Myriad Variable Concept", sans-serif;
+
+    --colorA--:#436EAF;
+    --colorN--: black;
+    --colorG--:#6A6055;
+
+    /*-------------------------COLOR PALLETE-------------------------*/
+    
+}
+
+
+/* First line------------------------------------*/
+*{
+    box-sizing: border-box;
+    font-family: var(--secondary_font--);
+    text-decoration: none;
+    margin: 0;
+
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+  }
+
+
+header{
+    
+    height: 12vh;;
+    
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-grow: 1;
+    flex-direction: row;
+    background-color: var(--colorN--);
+}
+
+
+
+nav, ul,li {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    
+}
+
+
+
+nav a{
+    float: left;
+    
+    display: flex;
+    padding: 0.5em 1em;
+    flex: 1;
+    flex-grow: 1;
+    color: var(--colorN--);
+    margin: 0 1em ;
+    font-family: var(--primary_font--);
+    border-top: 2px  solid transparent;
+    border-bottom: 2px solid transparent;
+    
+}
+
+.sidebar{
+    position:fixed;
+    top: 0;
+    right: -130vw;
+    height: 100vh;
+    width: 110vw;
+    z-index: 999;
+    background-color: var(--colorN--);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top:1rem ;
+    font-size: 20px;
+    opacity: 0.95;
+    transition: all 0.3s ease-in;
+    
+    
+}
+
+.sidebar--show{
+    
+    right: 0;
+    transition: all 0.3s ease-in;
+}
+
+.sidebar--hidden{
+    
+    right: -110vw;
+    transition: all 0.3s ease-in;
+}
+
+
+.sidebar li {
+    width: 100%;
+    
+    padding:0.2em;
+   
+}
+
+.sidebar li button,.sidebar li a {
+    align-content: center;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+}
+
+
+
+
+.menu-button{
+    
+display: none;
+
+
+}
+
+#closebar{
+    justify-content: end;
+    margin-right: 5vh;
+    margin-top: 3vh;
+    fill: var(--colorA--);
+    
+
+}
+
+
+
+button {
+background: none;
+cursor: pointer;
+}
+
+
+
+
+.hov{
+    display: flex;
+    flex-grow: 1;
+    flex: 1;
+    border-style: none;
+    border-bottom: 0 none ;
+    padding: 10px 15px;
+    transition: transform 0.5s ease-in-out;
+    color: white;
+}
+
+.hov:hover {
+    transition: border-bottom 1s ease-in-out;
+    border-bottom: 2px solid var(--colorA--);
+    
+}
+
+
+.iconimg{
+    max-height: 10vh;
+    margin-top: 2vh;
+    margin: 0 40px;
+    padding: 3px;
+    display: inline;
+    
+}
+
+
+
+
+/*---------------------------------Principal----------------------*/
+
+section{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 1px;
+ }
+
+
+
+
+
+#portbackground{ /* DEfine images in background */
+    display:grid;
+    margin: 0;
+    width: 100vw;
+    height: 50vh;
+    padding: 0;
+    text-align: center;
+    background-image: url(../images/gif\ de\ formulario.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-template-columns: 30vw 30vw;
+    grid-template-rows: 20vw ;
+    justify-content: center;
+    align-content: center;
+    
+    
+   
+    
+    
+    
+}
+
+#logoprincipal {  /* define main text*/ 
+    
+    display: block;
+    
+   
+    width: 20vw;
+    
+    
+}
+
+
+#portbackground div{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    align-content: center;
+}
+
+#subtitle{
+margin: auto;
+background-color: var(--colorG--);
+text-align: left;
+font-family: var(--primary_font--) ;
+font-weight: 500;
+
+}
+
+
+.maintext{
+    margin: auto;
+    padding: 0;
+    display: inline;
+    font-size: auto;
+
+}
+
+#rnsp{
+    font-size:large;
+
+}
+
+
+
+
+
+
+
+
+
+h2{
+    text-align: center;
+    font-family: var(--primary_font--);
+    margin: 0;
+    padding: 2.5em;
+    font-size: 2em;
+    font-weight: 300;
+    display: block;
+}
+
+
+#primertitulo{
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    color: white;
+
+}
+
+#objh2{
+    color: var(--colorA--);
+    font-weight: 550;
+    font-family: var(--secondary_font--);
+    display: block;
+}
+
+#objetivo{  /* Objetivo de la empresa */
+    max-width: 30vw;
+    margin: auto;
+    text-align: center;
+    font-family: var(--main_font--);
+    line-height: 2.5em;
+    font-size: larger;
+}
+
+/* Services----------------------------*/
+
+#aside_a {
+    margin-top: 6em;
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    justify-items: center;
+    margin: auto;
+    max-width: 70vw;
+    margin-bottom: 100px;
+    
+    
+}
+
+form{
+    max-width: 30vw;
+    display: grid;
+    flex: 1;
+    padding: 3rem;
+    flex-direction: column;
+    text-align: left;
+    
+    
+    
+    align-items: center;
+    
+    flex:1;
+    overflow: hidden;
+    border-radius: 22px;
+    position: relative;
+    box-shadow: 0 0  50px rgba(0, 0, 0, 0.3) ;
+
+
+    
+}
+
+legend{
+    font-size: larger;
+    margin-bottom: 1em;
+}
+
+input,label,select,#submit,option{
+    font-family: var(--main_font--);
+    font-size: large;
+    align-items: center;
+}
+input,textarea{
+    margin:2px;
+    
+}
+
+label{
+    margin-top: 1em;
+}
+
+option{
+    font-size: large;
+}
+
+input,select{
+    height: 2em;
+}
+
+
+.solitbutton{
+    border: 0;
+    font-size: large;
+    color: whitesmoke;
+    text-align: center;
+    font-family: var(--main_font--);
+    font-weight: 700;
+    cursor: pointer;
+    margin: 2em;
+    padding: 10px 15px 7px 15px;
+    background-color: var(--colorA--);
+    border-radius: 10px;
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.3) ;
+    transition: all 0.3s ease;
+
+}
+
+.solitbutton:hover{
+    background-color: var(--colorG--);
+}
+
+
+
+#span1{
+    color: var(--colorA--);
+    font-family: var(--main_font--);
+    font-weight: 700;
+}
+
+#span2{
+    color: var(--colorG--);
+    font-family: var(--main_font--);
+    font-weight: 700;
+}
+
+
+
+/* footer -----------------------------------*/
+
+footer{
+    background-color: var(--colorN--);
+    
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    color: whitesmoke;
+   
+  
+    
+}
+
+#aboutus{
+    max-width: 700px;
+    font-family: var(--primary_font--);
+    margin: auto;
+    
+}
+
+#aboutus p{
+    font-family: var(--main_font--);
+    font-size: large;
+    line-height: 30px;
+}
+
+#aboutus img{
+    display: flex;
+    float: right;
+    max-width: 22vw;
+    padding: 1em;
+    clear: both;
+    border-radius: 20px;
+}
+
+
+
+
+#contactus{
+    font-size:xx-large;
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+footer a{
+    display: flex;
+    align-items: center;
+    max-width: 3vw;
+    margin: 0 10px;
+
+    
+    fill: var(--colorG--);
+    
+    
+
+}
+
+
+#copyright{
+    text-align: center;
+    font-family: var(--main_font--);
+}
+
+
+
+
+
+#parraffooter{
+    max-width: 400px;
+    font-size: larger;
+    line-height: 2;
+    color: white;
+    font-family: var(--primary_font--);
+    text-align: left;
+    
+}
+
+footer hr{
+    margin: auto;
+    width: 90vw;
+    display: block;
+    
+}
+
+
+
+
+
+
+/*----------------------Wtsp Button-----------------*/
+.whatsapp-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 5vw;
+    background-color: #25D366; /* Color de WhatsApp */
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+    fill: #128C7E; /* Cambia el color al hacer hover */
+}
+
+
+
+
+/* When screen is on mobile--------------------------------- */
+@media screen and (max-width: 550px)  {
+
+    header{
+        height: 9.5vh;
+        width: 100vw;
+        position: fixed ;
+        z-index: 50;
+    }
+
+    .hideonmobile{
+        display: none;
+    }
+
+    
+    .iconimg{
+        max-height: 7vh;
+        margin-top: 2vh;
+        margin: 1em;
+        margin-left: 2em;
+        padding: 0;
+    }
+
+
+    .menu-button{
+        display: flex;
+        fill: var(--colorA--);
+        margin-right: 6vw;
+        
+        margin-top: 0.5vh;
+        
+        }
+
+    
+    .hov{
+
+    margin: 1em 0;
+    
+    }
+
+/*-------PRINCIPAL-------------*/
+
+#portbackground{ /* DEfine images in background */
+    display:flex;
+    margin: 0;
+    width: 100vw;
+    height: 60vh;
+    padding: 0;
+    text-align: center;
+    background-image: url(../images/gif\ de\ formulario.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    justify-items: center;
+    align-items: center;
+    
+   
+    
+    
+    
+}
+
+#logoprincipal {  /* define main text*/ 
+    
+    display: flex;
+    
+   
+    width: 20vh;
+    
+    
+}
+
+
+#portbackground div{
+    color: white;
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    margin: auto;
+}
+
+.maintext{
+   
+    padding: 0;
+    display: inline;
+    font-size: auto;
+    
+}
+
+
+
+
+
+    
+/* Cuerpo -------------------------------*/
+
+    #objetivo{
+        max-width: 80vw;
+        margin: auto;
+        padding: 0;
+       
+        margin-bottom: 4em;
+        display: block;
+    }
+
+    #aside_a{
+        flex-direction: column;
+    max-width: 90vw;
+    display: flex;
+    justify-content: center;
+    clear: both;
+        
+    }
+
+
+    section{
+        padding: 10px;
+        
+    } 
+
+
+    
+
+    form{
+        max-width: 85vw;
+        display: grid;
+        flex: 1;
+        padding: 3rem;
+        flex-direction: column;
+        text-align: left;
+        margin: auto;
+        
+        
+        align-items: center;
+        
+        flex:1;
+        overflow: hidden;
+        border-radius: 22px;
+        position: relative;
+        box-shadow: 0 0  50px rgba(0, 0, 0, 0.3) ;
+    
+    
+        
+    }
+
+    
+
+/*-------------------MAPA------------------------*/
+
+
+
+    
+
+    #aboutus{
+        max-width: 80vw;
+        font-family: var(--primary_font--);
+        margin: auto;
+        
+    }
+
+
+ 
+    footer a{
+        display: flex;
+        align-items: center;
+        max-width: 4vh;
+        margin: 0 10px;
+    
+        
+        fill: var(--colorA--);
+    }
+        
+    
+
+
+
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        width: 8vh;
+        padding: 10px;
+        z-index: 10;
+    }
+    
+
+
+
+}

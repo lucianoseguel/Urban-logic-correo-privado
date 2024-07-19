@@ -1,4 +1,4 @@
 function contactform() {
-    window.location.href = 'contact.html'
+    window.location.href = 'form-contact.html'
     
 }
