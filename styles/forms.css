@@ -218,7 +218,7 @@ section{
     display:grid;
     margin: 0;
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
     padding: 0;
     text-align: center;
     background-image: url(../images/gif\ de\ formulario.gif);
@@ -363,7 +363,7 @@ legend{
     margin-bottom: 1em;
 }
 
-input,label,select,#submit,option{
+input,label,select,#submit,option,textarea {
     font-family: var(--main_font--);
     font-size: large;
     align-items: center;
