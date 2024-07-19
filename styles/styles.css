@@ -543,14 +543,30 @@ footer{
     
     
     
-    display: grid;
+    display: flex;
+    flex-direction: column;
     
-    justify-items: left;
-    color: var(--dun);
+    justify-content: center;
+    color: whitesmoke;
    
   
     
 }
+
+#aboutus{
+    max-width: 700px;
+    font-family: var(--primary_font--);
+    margin: auto;
+    
+}
+
+#aboutus p{
+    font-family: var(--main_font--);
+    font-size: large;
+    line-height: 30px;
+}
+
+
 #contactus{
     font-size:xx-large;
 }
@@ -558,6 +574,10 @@ footer{
 .socialmedia{
     display: flex;
     flex-direction: row;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -573,6 +593,12 @@ footer a{
     
     
 
+}
+
+
+#copyright{
+    text-align: center;
+    font-family: var(--main_font--);
 }
 
 
@@ -886,6 +912,13 @@ footer hr{
     }
 
     
+
+    #aboutus{
+        max-width: 80vw;
+        font-family: var(--primary_font--);
+        margin: auto;
+        
+    }
 
 
  
