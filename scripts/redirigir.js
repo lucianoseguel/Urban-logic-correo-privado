@@ -11,3 +11,9 @@ const modal = document.querySelector('#modal')
 const enviar = document.querySelector('#submit')
 
 
+let formulario1 = document.getElementById('todoelform')
+
+const abrirformulario = ()  => {
+
+    formulario1.classList.toggle ('formulario1--hidden')
+}
