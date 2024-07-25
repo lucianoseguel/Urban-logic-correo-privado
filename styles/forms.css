@@ -366,7 +366,7 @@ h2{
     align-items:start;
     justify-items: center;
     margin: auto;
-    overflow: hidden;
+
     
    
  
@@ -389,7 +389,7 @@ form{
     text-align: left;
     margin: 10px;
     box-sizing: border-box;
-    
+    border-radius: 20px;
     align-items: center;
     
     flex:1;
