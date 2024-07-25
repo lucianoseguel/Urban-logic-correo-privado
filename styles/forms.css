@@ -36,7 +36,7 @@
 /* First line------------------------------------*/
 *{
     box-sizing: border-box;
-    font-family: var(--secondary_font--);
+    font-family: var(--main_font--);
     text-decoration: none;
     margin: 0;
 
@@ -306,14 +306,29 @@ h2{
 }
 
 #descripcion{  /* primer parrafo del form */
-    max-width: 30vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    
     margin: auto;
-    text-align: center;
+    text-align: left;
     font-family: var(--main_font--);
     line-height: 2.5em;
     font-size: larger;
     
+    
 }
+
+#descripcion ul,  #descripcion ul li{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style-type: circle;
+    
+}
+
+
 
 /* ---------------------------ESTILO FORMULARIO----------------------------*/
 

@@ -65,16 +65,22 @@
     
 
 <aside id="formulario1">
+    
+    <div id="descripcion">
+        <p>En Urban Logic, ofrecemos servicios logísticos diseñados para satisfacer tus necesidades con rapidez y eficiencia. Nuestros principales servicios incluyen:</p>
+        <ul>
+            <li>Servicio ágil y rápido: Entregamos tus paquetes de manera eficiente, asegurando una llegada sin demoras.</li>
+            <li>Servicios 24 y 48 horas: Opciones de entrega rápidas y flexibles que se adaptan a tus plazos y urgencias.</li>
+            <li>Seguimiento en tiempo real: Monitorea cada etapa de tu envío desde nuestra plataforma, garantizando transparencia y tranquilidad.</li>
+            <li>Paquetería hasta 50 kg: Transportamos paquetes, asegurando su manejo y entrega en perfectas condiciones.</li>
+        </ul>
+        <p>En Urban Logic, nos comprometemos a ofrecerte soluciones logísticas de alta calidad, con un enfoque en la rapidez, fiabilidad y transparencia.</p>
 
-    <p id="descripcion">
-        Por favor, completa el siguiente formulario para ponerte en contacto con nosotros. 
-        En Urban Logic, nos comprometemos a mantenerte informado sobre el estado de tus envíos. Ofrecemos notificaciones de seguimiento y consulta de estado del pedido para que siempre sepas dónde está tu paquete y cuándo llegará 
-        a su destino. No dudes en contactarnos si tienes alguna pregunta o necesitas asistencia adicional.
 
-    </p>
+    </div>
     
     <form action="/submit_contact" method="post">
-        <legend>envianos tus datos</legend>
+        <legend style=" font-family: var(--secondary_font--);">envianos tus datos</legend>
         <label for="name">Nombre y Apellido *</label>
         <input type="text" id="name" name="name" required>
         
@@ -86,14 +92,7 @@
         
 
 
-        <label for="tipo">Servicio *</label>
-        <select type="" id="tipo" name="tipo">
-            <option value="selec"></option>
-                <option value="Servicio Postal">Servicio postal</option>
-                <option value="Paqueteria">Servicio Encomienda / Paquetería</option>
-              
-                
-        </select>
+        
         <div id="inrow">
             
         <div class="placeinout">
