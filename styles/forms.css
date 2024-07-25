@@ -72,9 +72,8 @@ nav, ul,li {
     display: flex;
     text-align: center;
     flex-direction: row;
-    
-    justify-content: space-between;
     overflow: hidden;
+    justify-content: space-between;    
     align-items: center;
     
 }
@@ -320,13 +319,24 @@ h2{
     
 }
 
-#descripcion ul,  #descripcion ul li{
-    display: flex;
-    flex-direction: column;
+.listaserv{
+
+    display:block ;
+    overflow: visible;
+    text-align: left;
+    list-style-type: circle;
+
+    
+}
+
+.listaserv li{
     text-align: left;
     list-style-type: circle;
     
 }
+
+
+
 
 
 
