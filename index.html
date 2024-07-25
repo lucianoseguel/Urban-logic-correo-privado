@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Logic | Centro logístico </title>
+    <link rel="stylesheet" href="styles/forms.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/scrollreveal.js"></script>
     <link rel="icon" href="images/icono.png" type="image/png">
@@ -72,45 +73,26 @@
 
 <!---------------------------------------------------------CAJAS Y SERVICIOS PRINCIPALES------------------------------------------------------------->
     
-
 <aside id="aside_a">
         
-    <!--Airport city in out-->
+    <!--Encomienda y servicio postal-->
     
-
+<!--CAJA ENCOMIENDA-->
     <div class="box_services" id="encomienda"> 
         
         <img src="images/encomienda.png" alt="paquete" class="img_services">
         <p id="box1" class="descripiton_services" >encomiendas</p>
 
-        <ul>
-
-            <li>Servicio de ágil y rápido &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; </li>
-            <li>Servicios 24 y 48 hs &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160; &#160; &#160;  </li>
-            <li>Seguimiento en tiempo real de tu pedido&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160; </li>
-            <li>Paqueteria hasta 50 kg &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; </li>
-            
-            
-        </ul>
-       
+       <p style="font-family: var(--main_font--); margin-top: 20px;">Servicio de Paqueteria y encomienda</p>
         
-        <p class="solitbutton" onclick="contactform()">Más información</p>
+        <p class="solitbutton" onclick="contactform()" id="#btn-paq">Más información</p>
     </div>
-
+<!--CAJA POSTAL-->
     <div class="box_services" id="postal"> 
        <img src="images/sobrepostal.png" alt="postal" class="img_services">
          <p id="box2" class="descripiton_services">correo postal</p>
         
-         <ul>
-
-            <li>Servicio de distribuciones masivas simples bajo puerta</li>
-            <li>Servicio con acuses de recibo  &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;  </li>
-            <li>Gestión de cobranzas &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; </li>
-            <li>Notificaciones &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;  </li>
-            <li>Notificaciones judiciales &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;   </li>
-            
-            
-        </ul>
+         <p style="font-family: var(--main_font--); margin-top: 20px;">Servicio postal y cartas</p>
 
         <p class="solitbutton" onclick="contactform()">Más información</p>
 
@@ -119,6 +101,87 @@
    
    
 </aside>
+
+<dialog id="modal">
+<aside id="formulario1">
+
+    <p id="descripcion">
+        Por favor, completa el siguiente formulario para ponerte en contacto con nosotros. 
+        En Urban Logic, nos comprometemos a mantenerte informado sobre el estado de tus envíos. Ofrecemos notificaciones de seguimiento y consulta de estado del pedido para que siempre sepas dónde está tu paquete y cuándo llegará 
+        a su destino. No dudes en contactarnos si tienes alguna pregunta o necesitas asistencia adicional.
+
+    </p>
+    
+    <form action="/submit_contact" method="post">
+        <legend>envianos tus datos</legend>
+        <label for="name">Nombre y Apellido *</label>
+        <input type="text" id="name" name="name" placeholder="Nombre" required>
+        
+        <label for="email">Correo Electrónico *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tel">Teléfono *</label>
+        <input type="tel" id="tel" name="tel" required>
+        
+
+
+        <label for="tipo">Servicio</label>
+        <select type="" id="tipo" name="tipo">
+            <option value="selec"></option>
+                <option value="Servicio Postal">Servicio postal</option>
+                <option value="Paqueteria">Servicio Encomienda / Paquetería</option>
+              
+                
+        </select>
+
+        <label for="Desde">Partida</label>
+        <select type="" id="Desde" name="Desde" required>
+            <option value="selec"></option>
+                <option value="LasHeras">Las Heras</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Godoy Cruz">Godoy Cruz</option>
+                <option value="Guaymallén">Guaymallén</option>
+                <option value="Luján de Cuyo">Luján de Cuyo</option>
+                <option value="Interior de Mendoza">Interior de Mendoza</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Otro">Otro</option>
+                
+                
+        </select>
+
+        <label for="Hasta">Destino</label>
+        <select type="" id="Hasta" name="Hasta" required>
+            <option value="selec"></option>
+                <option value="LasHeras">Las Heras</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Godoy Cruz">Godoy Cruz</option>
+                <option value="Guaymallén">Guaymallén</option>
+                <option value="Luján de Cuyo">Luján de Cuyo</option>
+                <option value="Interior de Mendoza">Interior de Mendoza</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Otro">Otro</option>
+        </select>
+
+        <label for="kg">Kg estimado *</label>
+        <input type="number" id="kg" name="kg" required>
+        
+        <label for="Mensaje">Comentarios (opcional):</label>
+        <textarea id="Mensaje" name="Mensaje" rows="3" ></textarea>
+        
+        <button type="submit" class="solitbutton">Solicitar Cotización</button>
+    </form>
+
+
+</aside>
+</dialog>
+
+
+
+<!-------------------------------------------Destinos------------->
 
 <h2 id="obj2h2" >destinos de nuestros servicios</h2>
 

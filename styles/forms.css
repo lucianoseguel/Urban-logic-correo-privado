@@ -256,14 +256,7 @@ section{
     align-content: center;
 }
 
-#subtitle{
-margin: auto;
-background-color: var(--colorG--);
-text-align: left;
-font-family: var(--primary_font--) ;
-font-weight: 500;
 
-}
 
 
 .maintext{
@@ -312,45 +305,63 @@ h2{
     display: block;
 }
 
-#objetivo{  /* Objetivo de la empresa */
+#descripcion{  /* primer parrafo del form */
     max-width: 30vw;
     margin: auto;
     text-align: center;
     font-family: var(--main_font--);
     line-height: 2.5em;
     font-size: larger;
+    
 }
 
-/* Services----------------------------*/
+/* ---------------------------ESTILO FORMULARIO----------------------------*/
 
-#aside_a {
+
+#formulario1 {
+    
+    
+   max-width: 70vw;
+   
     margin-top: 6em;
     display: flex;
     flex-direction: row;
     align-items:start;
     justify-items: center;
     margin: auto;
-    max-width: 70vw;
-    margin-bottom: 100px;
     
+    
+   
+ 
+    z-index: 20;
+
     
 }
 
+
+#formulario1--hidden{
+    display: none;
+
+}
+
+
+
 form{
+    background-color: whitesmoke;
     max-width: 30vw;
     display: grid;
     flex: 1;
     padding: 3rem;
     flex-direction: column;
     text-align: left;
-    
-    
+    margin: 10px;
+    box-sizing: border-box;
     
     align-items: center;
     
     flex:1;
-    overflow: hidden;
-    border-radius: 22px;
+    
+  
     position: relative;
     box-shadow: 0 0  50px rgba(0, 0, 0, 0.3) ;
 
@@ -370,6 +381,9 @@ input,label,select,#submit,option,textarea {
 }
 input,textarea{
     margin:2px;
+    border: 0 solid;
+    background-color:rgb(218, 218, 218);
+    border-radius: 10px;
     
 }
 
@@ -383,6 +397,28 @@ option{
 
 input,select{
     height: 2em;
+    background-color:rgb(218, 218, 218);
+    border-radius: 10px;
+}
+
+
+
+#kg, #Desde, #Hasta{
+    width: 120px;
+    display: block;
+    
+}
+
+#inrow{
+    display: grid;
+    gap: 3em;
+    grid-template-columns: 100px 100px;
+}
+
+/*Configuracion de las cajas de partida y destino para que queden al lado una a lo otra en el form*/ 
+
+.placeinout{
+    margin-top: 1em;
 }
 
 
@@ -648,7 +684,7 @@ footer hr{
     
 /* Cuerpo -------------------------------*/
 
-    #objetivo{
+    #descripcion{
         max-width: 80vw;
         margin: auto;
         padding: 0;
@@ -657,7 +693,8 @@ footer hr{
         display: block;
     }
 
-    #aside_a{
+    #formulario1
+    {
         flex-direction: column;
     max-width: 90vw;
     display: flex;

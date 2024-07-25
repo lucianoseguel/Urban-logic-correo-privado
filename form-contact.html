@@ -64,9 +64,9 @@
 <!---------------------------------------------------------CAJAS Y SERVICIOS PRINCIPALES------------------------------------------------------------->
     
 
-<aside id="aside_a">
+<aside id="formulario1">
 
-    <p id="objetivo">
+    <p id="descripcion">
         Por favor, completa el siguiente formulario para ponerte en contacto con nosotros. 
         En Urban Logic, nos comprometemos a mantenerte informado sobre el estado de tus envíos. Ofrecemos notificaciones de seguimiento y consulta de estado del pedido para que siempre sepas dónde está tu paquete y cuándo llegará 
         a su destino. No dudes en contactarnos si tienes alguna pregunta o necesitas asistencia adicional.
@@ -86,15 +86,17 @@
         
 
 
-        <label for="tipo">Servicio</label>
+        <label for="tipo">Servicio *</label>
         <select type="" id="tipo" name="tipo">
             <option value="selec"></option>
-                <option value="Correo Postal">Correo postal</option>
-                <option value="Paqueteria">Encomienda / Paquetería</option>
-                <option value="Logística">Logística</option>
+                <option value="Servicio Postal">Servicio postal</option>
+                <option value="Paqueteria">Servicio Encomienda / Paquetería</option>
+              
                 
         </select>
-
+        <div id="inrow">
+            
+        <div class="placeinout">
         <label for="Desde">Partida</label>
         <select type="" id="Desde" name="Desde" required>
             <option value="selec"></option>
@@ -110,8 +112,9 @@
                 <option value="Otro">Otro</option>
                 
                 
-        </select>
+        </select> </div>
 
+        <div class="placeinout">
         <label for="Hasta">Destino</label>
         <select type="" id="Hasta" name="Hasta" required>
             <option value="selec"></option>
@@ -124,11 +127,13 @@
                 <option value="San Juan">San Juan</option>
                 <option value="San Luis">San Luis</option>
                 <option value="Buenos Aires">Buenos Aires</option>
-                <option value="Otro">Otro</option>
-                
-                
-                
-        </select>
+
+        </select></div>
+
+
+    </div> 
+        <label for="kg">Kg estimado </label>
+        <input type="number" id="kg" name="kg" required>
         
         <label for="Mensaje">Comentarios (opcional):</label>
         <textarea id="Mensaje" name="Mensaje" rows="3" ></textarea>
@@ -136,15 +141,7 @@
         <button type="submit" class="solitbutton">Solicitar Cotización</button>
     </form>
 
-    
-    
 
-   
-
-    
-
-   
-   
 </aside>
 
 
