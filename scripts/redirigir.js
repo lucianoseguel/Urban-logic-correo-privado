@@ -1,5 +1,5 @@
 function contactform() {
-    window.location.href = 'form-contact.html'
+    window.location.href = 'paqueteria.html'
     
 }
 

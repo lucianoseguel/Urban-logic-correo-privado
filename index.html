@@ -10,31 +10,34 @@
     <link rel="icon" href="images/icono.png" type="image/png">
 </head>
 <body>
-    <a href="https://wa.link/8a3424" target="_blank"><img class="whatsapp-btn" src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="wsp"></a>
-    <header >
-        <a href="#"><img class="iconimg" src="images/logo.png" alt="icon"></a>
+    <a href="https://wa.link/8a3424" target="_blank"><img class="whatsapp-btn" src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="wsp"></a> 
+   
 
+    <header >
+       
 
         <!---------------------------------------------------------NAV------------------------------------------------------------->
     
         <nav>
+            <a href="index.html"><img class="iconimg" src="images/logo.png" alt="icon"></a>
             
-            <!--En Escritorio-->
+            <!--En Movil-->
             <ul class="sidebar "  id="sidebar" >
                 <li  id="closebar" onclick=mostrar_ocultar_nav()><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-                <li onclick=mostrar_ocultar_nav()><a href="#"  class="hov" id="inicio">Home</a></li>
-                <li onclick=mostrar_ocultar_nav()><a href="#paqueteriaypostal" class="hov" id="contacto"> Servicios</a></li>
-                <li onclick=mostrar_ocultar_nav()><a href="#obj2h2" class="hov" id="servicios"> Destinos </a></li> 
+                <li onclick=mostrar_ocultar_nav()><a href="index.html"  class="hov" id="inicio">Home</a></li>
+                <li onclick=mostrar_ocultar_nav()><a href="#aside_a" class="hov" id="contacto"> Servicios </a></li>
+                <li onclick=mostrar_ocultar_nav()><a href="#obj2h2" class="hov" id="servicios">Destinos</a></li>
                 
                 <li onclick=mostrar_ocultar_nav()><a href="#nosotros" class="hov" id="servicios">Nosotros</a></li> 
 
             </ul>
-            <!--En dispositivo movil-->
-            <ul >
-            <li><a href="#" class="hov hideonmobile" id="inicio">Home</a></li>
-            <li ><a href="#paqueteriaypostal" class="hov hideonmobile" id="contacto">Servicios</a></li>
+            <!--En Escritorio-->
+            <ul id="navdesk">
+            <li><a href="index.html" class="hov hideonmobile" id="inicio">Home</a></li>
+            <li ><a href="#aside_a" class="hov hideonmobile" id="contacto">Servicios</a></li>
+            <li><a href="#obj2h2" class="hov hideonmobile" id="servicios">Destinos</a></li>
             <li><a href="#nosotros" class="hov hideonmobile" id="servicios">Nosotros</a></li>
-            <li><a href="#obj2h2" class="hov hideonmobile" id="servicios"> Destinos </a></li> 
+            
             <li onclick="mostrar_ocultar_nav()" class="menu-button" id="menu-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
 
             </ul>
@@ -85,7 +88,7 @@
 
        <p style="font-family: var(--main_font--); margin-top: 20px;">Servicio de Paqueteria y encomienda</p>
         
-        <p class="solitbutton" onclick="contactform()" id="#btn-paq">Más información</p>
+        <a href="paqueteria.html"> <p class="solitbutton" id="#btn-paq">Más información</p></a>
     </div>
 <!--CAJA POSTAL-->
     <div class="box_services" id="postal"> 
@@ -94,7 +97,7 @@
         
          <p style="font-family: var(--main_font--); margin-top: 20px;">Servicio postal y cartas</p>
 
-        <p class="solitbutton" onclick="contactform()">Más información</p>
+        <a href="postal.html"><p class="solitbutton" >Más información</p></a>
 
      </div>
 

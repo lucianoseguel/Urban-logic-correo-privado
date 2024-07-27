@@ -36,7 +36,7 @@
 /* First line------------------------------------*/
 *{
     box-sizing: border-box;
-    font-family: var(--secondary_font--);
+    font-family: var(--main_font--);
     text-decoration: none;
     margin: 0;
 
@@ -52,8 +52,7 @@ body, html {
   }
 
 
-
-  header{
+header{
     
     height: 12vh;;
     width: 100vw;
@@ -214,8 +213,6 @@ cursor: pointer;
 
 
 
-
-
 /*---------------------------------Principal----------------------*/
 
 section{
@@ -232,10 +229,10 @@ section{
     display:grid;
     margin: 0;
     width: 100vw;
-    height: 90vh;
+    height: 40vh;
     padding: 0;
     text-align: center;
-    background-image: url(../images/carreteprincipal.gif);
+    background-image: url(../images/gif\ de\ formulario.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -270,11 +267,7 @@ section{
     align-content: center;
 }
 
-#subtitle{
-font-family: var(--primary_font--) ;
-font-weight: 500;
 
-}
 
 
 .maintext{
@@ -323,45 +316,85 @@ h2{
     display: block;
 }
 
-#objetivo{  /* Objetivo de la empresa */
-    width: 55vw;
+#descripcion{  /* primer parrafo del form */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    
     margin: auto;
-    text-align: center;
+    text-align: left;
     font-family: var(--main_font--);
     line-height: 2.5em;
+    font-size: larger;
+    
+    
 }
 
-/* Services----------------------------*/
+.listaserv{
 
-#aside_a {
-    margin-top: 4em;
-    display: grid;
-    grid-auto-flow: row;
+    display:block ;
+    overflow: visible;
+    text-align: left;
+    list-style-type: circle;
+
+    
+}
+
+.listaserv li{
+    text-align: left;
+    list-style-type: circle;
+    
+}
+
+
+
+
+
+
+/* ---------------------------ESTILO FORMULARIO----------------------------*/
+
+
+.formulario1 {
+    
+    
+   max-width: 70vw;
+  
+    margin-top: 6em;
+    display: flex;
+    flex-direction: row;
     align-items:start;
     justify-items: center;
-    justify-content: space-evenly;
+    margin: auto;
+
     
-    margin-bottom: 2em;
-    grid-template-columns: 35vw 35vw ;
-    grid-template-rows: 40vw ;
+   
+ 
+    z-index: 20;
     
+   
 }
 
-.box_services{
 
-    display: flex;
+
+
+
+form{
+    background-color: whitesmoke;
+    max-width: 40vw;
+    display: grid;
     flex: 1;
-    flex-wrap: wrap;
+    padding: 3rem;
     flex-direction: column;
-    width: 25vw;
-    
-    
+    text-align: left;
+    margin: 10px;
     box-sizing: border-box;
+    border-radius: 20px;
     align-items: center;
-    justify-content: space-between;
-    flex-grow: 1;
-    overflow: hidden;
-    border-radius: 22px;
+    
+    flex:1;
+    
+  
     position: relative;
     box-shadow: 0 0  50px rgba(0, 0, 0, 0.3) ;
 
@@ -369,64 +402,64 @@ h2{
     
 }
 
-.img_services{
-    width: 80px;
-    padding: 15px;
-    display: inline;
-    margin: 1rem;
-    border: 2px solid var(--colorA--);
-    border-radius: 50%;
-   
-    filter: hue-rotate(182) ;
-    overflow: visible;
+legend{
+    font-size: larger;
+    margin-bottom: 1em;
+}
 
+input,label,select,#submit,option,textarea {
+    font-family: var(--main_font--);
+    font-size: large;
+    align-items: center;
+}
+input,textarea{
+    margin:2px;
+    border: 0 solid;
+    background-color:rgb(218, 218, 218);
+    border-radius: 10px;
+    padding: 0.5em;
+    
+}
+
+label{
+    margin-top: 1em;
+}
+
+option{
+    font-size: large;
+}
+
+input,select{
+    height: 2em;
+    background-color:rgb(218, 218, 218);
+    border-radius: 10px;
 }
 
 
 
-.descripiton_services{
-    font-family: var(--secondary_font--);
-    font-size: 1.4vw;
+#kg, #Desde, #Hasta{
+    width: 110px;
+    display: block;
     text-align: center;
     
-    fill: var(--colorA--);
-    font-weight: 300;
-    
-   
 }
 
-
-.box_services ul{
-    margin: 2rem 0;
-    
-    list-style-type: none;
-    padding-left: 2rem;
-    
-    display: flex;
-    
-    flex-direction: column;
-    
+#inrow{
+    display: grid;
+    gap: 3em;
+    grid-template-columns: 100px 100px;
 }
 
+/*Configuracion de las cajas de partida y destino para que queden al lado una a lo otra en el form*/ 
 
-
-
-.box_services li{
-    font-family: var(--main_font--);
-    text-align: left;
-    display: block;
-    padding-left: 2rem;
-    background-image: url(../images/viñeta.png);
-    margin: 1em 0;
-    background-position: 0 0;
-    background-size: 1.6rem 1.6rem;
-    max-width: 230px;
-    background-repeat: no-repeat;
+.placeinout{
+    margin-top: 1em;
 }
 
 
 .solitbutton{
-   
+    border: 0;
+    font-size: large;
     color: whitesmoke;
     text-align: center;
     font-family: var(--main_font--);
@@ -447,91 +480,6 @@ h2{
 
 
 
-
-/* ---------------------------------------titulo de ubicacion de envios */
-#obj2h2{
-    display: block;
-    color: var(--colorA--);
-    font-weight: 550;
-    font-family: var(--secondary_font--);
-    
-    
-    padding: 0;
-
-}
-
-.generalmap {
-    display: grid;
-    grid-template-columns: 50vw 50vw; 
-    margin-top: 0;
-    height: fit-content;
-    padding: 0;
-    
-    justify-content: center;
-    
-    align-items: center;
-    
-  
-  
-   
-}
-
-.svgmap{
-    margin: auto;
-    display: flex;
-    overflow: hidden;
-    width: 600px;
-    height: 600px;
-    justify-items: center;
-    align-items: center;
-}
-
-
-
-.generalmap svg{
-    display: flex;
-    margin: 20rem auto auto auto;
-    transform: scale(4);
-    justify-items: center;
-    align-items: center;
-    height: auto;
-    width: 200px;
-    background-color: none;
-    
-    
-}
-
-.generalmap path{
-    fill: whitesmoke;
-    stroke: var(--colorN--);
-    stroke-width: 1px ;
-    
-}
-
-.generalmap .soon:hover {
-    transition: all 0.4s;
-    fill: var(--colorG--);
-    
-}
-
-.generalmap .chosed{
-    transition: all 0.4s;
-    fill: var(--colorA--);
-}
-
-
-
-.generalmap p{
-    display: block;
-   
-    padding: 1em;
-    width: 500px;
-    font-family: var(--main_font--);
-    font-weight: 400;
-    font-size: large;
-}
-
-
 #span1{
     color: var(--colorA--);
     font-family: var(--main_font--);
@@ -544,10 +492,6 @@ h2{
     font-weight: 700;
 }
 
-
-#mappng{
-    display: none;
-}
 
 
 /* footer -----------------------------------*/
@@ -679,7 +623,6 @@ footer hr{
 /* When screen is on mobile--------------------------------- */
 @media screen and (max-width: 550px)  {
 
-
     header{
         height: 9.5vh;
         width: 100vw;
@@ -717,17 +660,16 @@ footer hr{
 /*-------PRINCIPAL-------------*/
 
 #portbackground{ /* DEfine images in background */
-    display:grid;
+    display:flex;
     margin: 0;
     width: 100vw;
-    height: 95vh;
+    height: 60vh;
     padding: 0;
     text-align: center;
-    background-image: url(../images/carreteprincipal.gif);
+    background-image: url(../images/gif\ de\ formulario.gif);
     background-size: cover;
     background-repeat: no-repeat;
-    grid-template-columns: 80vw;
-    grid-template-rows:  40vh 15vh;
+    
     justify-items: center;
     align-items: center;
     
@@ -774,17 +716,20 @@ footer hr{
     
 /* Cuerpo -------------------------------*/
 
-    #objetivo{
-        width:80vw;
+    #descripcion{
+        max-width: 80vw;
         margin: auto;
+        padding: 0;
        
+        margin-bottom: 4em;
         display: block;
     }
 
-    #aside_a{
-
-
-    display: block;
+    .formulario1
+    {
+        flex-direction: column;
+    max-width: 90vw;
+    display: flex;
     justify-content: center;
     clear: both;
         
@@ -799,140 +744,33 @@ footer hr{
 
     
 
-
-
-    .box_services{
-        display: flex;
+    form{
+        max-width: 85vw;
+        display: grid;
+        flex: 1;
+        padding: 3rem;
         flex-direction: column;
+        text-align: left;
+        margin: auto;
         
-       padding-top: 20px;
-        width: 80vw;
         
         align-items: center;
-        justify-content: center;
-        margin: 4em auto;
+        
+        flex:1;
+        overflow: hidden;
         border-radius: 22px;
-        
         position: relative;
-        border: var(--field-drab) 0.5px solid;
-        
-      }
-
-
-    .img_services{
-        
-            width: 80px;
-            padding: 15px;
-            display: inline;
-            
-            margin: auto;
-            border: 2px solid var(--colorA--);
-            border-radius: 50%;
-           
-            filter: hue-rotate(182) ;
-            overflow: visible;
-        
-        
+        box-shadow: 0 0  50px rgba(0, 0, 0, 0.3) ;
+    
+    
         
     }
 
-
-    .descripiton_services{
-        font-family: var(--secondary_font--);
-
-        font-size: 3vh;
-        text-align: center;
-        margin: 1em auto 0 auto;
-        display: inline;
-        
-        
-    }
-
-
-
-    .box_services ul{
-        padding: 0;
-        max-width: 65vw;
-
-    }
-
-
-
-
+    
 
 /*-------------------MAPA------------------------*/
 
-#obj2h2{
-    margin-top: 0;
-}
 
-
-.generalmap{
-
-    display: flex;
-    
-    flex-direction: column;
-    justify-items: center;
-    
-    
-    margin-bottom: 150px;
-   
-}
-
-.generalmap svg{
-    
-    margin: auto;
-    transform: scale(1);
-    
-   
-    
-    
-}
-
-
-/*--------------- contenedor del svg display none------------*/
-
-
-
-.svgmap{
-    
-    max-width: 100vw;
-    margin: auto;
-    width: 300px;
-    justify-content: center;
-    display: none;
-   
-}
-
-.generalmap p{
-    display: block;
-    max-width: 80vw;
-    
-    clear: both;
-    font-family: var(--main_font--);
-    font-weight: 400;
-    font-size: large;
-}
-
-
-    .generalmap .soon {
-        fill: var(--colorG--);
-        cursor:not-allowed;
-    }
-
-    .generalmap .chosed{
-        fill: var(--colorA--);
-    }
-
-
-/*--------------------configuracion mapa en telefono png -----------------------*/
-
-    #mappng{
-        margin: 0;
-        max-width: 90vw;
-        display: flex;
-
-    }
 
     
 
@@ -968,6 +806,140 @@ footer hr{
         z-index: 10;
     }
     
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 1050px) { /*------------TABLET-------*/
+
+
+    header{
+        height: 10vh;
+        width: 100vw;
+        position: fixed ;
+        z-index: 50;
+    }
+
+
+    
+    .iconimg{
+        max-height: 7vh;
+        margin-top: 2vh;
+        margin: 1em;
+        margin-left: 2em;
+        padding: 0;
+    }
+
+
+  
+
+    
+
+/*-------PRINCIPAL-------------*/
+
+#portbackground{ /* DEfine images in background */
+    display:flex;
+    margin: 0;
+    width: 100vw;
+    height: 50vh;
+    padding: 0;
+    text-align: center;
+    background-image: url(../images/gif\ de\ formulario.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    justify-items: center;
+    align-items: center;
+    
+   
+    
+    
+    
+}
+
+#logoprincipal {  /* define main text*/ 
+    
+    display: flex;
+    
+   
+    width: 20vh;
+    
+    
+}
+
+
+
+.maintext{
+   
+    padding: 0;
+    display: inline;
+    font-size: auto;
+    
+}
+
+
+
+
+/* Cuerpo -------------------------------*/
+
+    #descripcion{
+        max-width: 70vw;
+        margin: auto;
+        padding: 0;
+       display: flex;
+       flex: 1;
+        margin-bottom: 4em;
+       
+    }
+
+    .formulario1
+    {
+
+    flex-direction: column;
+    max-width: 95vw;
+    display: flex;
+    justify-items: center;
+    clear: both;
+        
+    }
+
+
+    section{
+        padding: 10px;
+        
+    } 
+
+
+    
+
+    form{
+        max-width: 90vw;
+        display: grid;
+        flex: 1;
+        padding: 3rem;
+        flex-direction: column;
+        text-align: left;
+       
+        
+        margin: 1em auto 5em auto;
+        align-items: center;
+
+        overflow: hidden;
+        border-radius: 22px;
+        position: relative;
+        box-shadow: 0 0  50px rgba(0, 0, 0, 0.3) ;
+    
+    
+        
+    }
+
+    
+
+
 
 
 
