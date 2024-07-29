@@ -232,7 +232,7 @@ section{
     height: 40vh;
     padding: 0;
     text-align: center;
-    background-image: url(../images/servicio\ postal.png);
+    background-image: url(../images/servicio-postal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -848,7 +848,7 @@ footer hr{
     height: 50vh;
     padding: 0;
     text-align: center;
-    background-image: url(../images/servicio\ postal.png);
+    background-image: url(../images/servicio-postal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
