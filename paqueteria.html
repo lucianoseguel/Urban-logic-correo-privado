@@ -78,7 +78,7 @@
 
     </div>
     
-    <form action="/submit_contact" method="post">
+    <form action="https://formsubmit.co/lucianitoseguel@gmail.com" method="post">
         <legend style=" font-family: var(--secondary_font--);">envianos tus datos</legend>
         <label for="name">Nombre y Apellido *</label>
         <input type="text" id="name" name="name" required>
@@ -135,8 +135,19 @@
         
         <label for="Mensaje">Comentarios (opcional):</label>
         <textarea id="Mensaje" name="Mensaje" rows="3" ></textarea>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
         
-        <button type="submit" class="solitbutton">Solicitar Cotización</button>
+        <input type="hidden" name="_autoresponse" value="Cotizacion">
+
+        <input type="hidden" name="_template" value="table">
+
+        <input type="hidden" name="_subject" value="Cotización de paqueteria">
+
+
+        
+        <button type="submit" class="solitbutton" onclick="sended()">Solicitar Cotización</button>
     </form>
 
 

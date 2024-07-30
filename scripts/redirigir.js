@@ -4,6 +4,10 @@ function contactform() {
 }
 
 
+function sended(){
+    alert('Enviado correctamente')
+}
+
 const masinfo = document.querySelector('#btn-paq')
 
 const modal = document.querySelector('#modal')
