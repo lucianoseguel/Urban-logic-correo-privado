@@ -684,12 +684,14 @@ footer hr{
 @media screen and (max-width: 550px)  {
 
 
-    header{
+    header,nav{
         height: 9.5vh;
         width: 100vw;
         position: fixed ;
         z-index: 50;
     }
+
+   
 
     .hideonmobile{
         display: none;
