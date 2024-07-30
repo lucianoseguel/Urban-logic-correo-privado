@@ -66,13 +66,15 @@
 <aside class="formulario1" id="todoelform">
     
     <div id="descripcion">
-        <p>En Urban Logic, nos especializamos en servicios postales que garantizan la entrega efectiva y puntual de tus documentos y notificaciones importantes. Nuestro enfoque es ofrecer soluciones precisas y seguras para tus necesidades postales.</p>
+        <p>En Urban Logic, nos especializamos en servicios postales que garantizan la entrega efectiva y puntual de tus documentos y notificaciones. Nuestro enfoque es ofrecer soluciones precisas y seguras para tus necesidades postales, con cobertura total en Mendoza, alcanzando el 85% directamente y el 15% restante a través de convenios de redespacho.
+
+        </p>
 <ul class="listaserv">
     <li>Servicio de distribuciones masivas: Entregas simples bajo puerta.</li>
-    <li>Servicio con acuses de recibo: Confirmación de entrega de tus envíos.</li>
-    <li>Gestión de cobranzas: Manejo eficiente de tus cobros.</li>
-    <li>Notificaciones: Envío de avisos importantes.</li>
-    <li>Notificaciones judiciales: Servicio especializado para documentos legales.</li>
+    <li>Servicio con acuses de recibo.</li>
+    <li>Gestión de cobranzas.</li>
+    <li>Notificaciones.</li>
+    <li>Notificaciones judiciales.</li>
 </ul>
 <p>En Urban Logic, nos comprometemos a brindarte servicios postales de alta calidad, asegurando que tus comunicaciones lleguen a su destino de manera segura y eficiente.</p>
 
@@ -96,37 +98,18 @@
         
         <div id="inrow">
             
-        <div class="placeinout">
-        <label for="Desde">Partida</label>
-        <select type="" id="Desde" name="Desde" required>
-            <option value="selec"></option>
-                <option value="LasHeras">Las Heras</option>
-                <option value="Mendoza">Mendoza</option>
-                <option value="Godoy Cruz">Godoy Cruz</option>
-                <option value="Guaymallén">Guaymallén</option>
-                <option value="Luján de Cuyo">Luján de Cuyo</option>
-                <option value="Interior de Mendoza">Interior de Mendoza</option>
-                <option value="San Juan">San Juan</option>
-                <option value="San Luis">San Luis</option>
-                <option value="Buenos Aires">Buenos Aires</option>
-                <option value="Otro">Otro</option>
-                
-                
-        </select> </div>
+            <label for="piezas">N° Piezas</label>
+            <input type="number" id="piezas" name="piezas" required>
 
         <div class="placeinout">
-        <label for="Hasta">Destino</label>
-        <select type="" id="Hasta" name="Hasta" required>
+        <label for="piezas">Tipo de pieza</label>
+        <select type="" id="piezas" name="piezas" required>
             <option value="selec"></option>
-                <option value="LasHeras">Las Heras</option>
-                <option value="Mendoza">Mendoza</option>
-                <option value="Godoy Cruz">Godoy Cruz</option>
-                <option value="Guaymallén">Guaymallén</option>
-                <option value="Luján de Cuyo">Luján de Cuyo</option>
-                <option value="Interior de Mendoza">Interior de Mendoza</option>
-                <option value="San Juan">San Juan</option>
-                <option value="San Luis">San Luis</option>
-                <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Mendoza">Simple</option>
+                <option value="LasHeras">Con acuse</option>
+                
+                <option value="Mendoza">Notificacion</option>
+               
 
         </select></div>
 
@@ -134,7 +117,7 @@
     </div> 
         
         
-        <label for="Mensaje">Comentarios (opcional):</label>
+        <label for="Mensaje">Comentarios:</label>
         <textarea id="Mensaje" name="Mensaje" rows="3" ></textarea>
         
         <button type="submit" class="solitbutton">Solicitar Cotización</button>
