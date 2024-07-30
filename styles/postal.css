@@ -78,6 +78,7 @@ nav{
     padding-right: 7vw;
     height: 12vh;
     z-index: 20;
+    background-color: var(--colorN--);
 
 }
 

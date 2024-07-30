@@ -73,6 +73,7 @@ nav{
     display: flex;
     position: fixed;
     align-items: center;
+    background-color: var(--colorN--);
     height: 12vh;
     z-index: 20;
     flex-direction: row;

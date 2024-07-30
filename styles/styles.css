@@ -74,11 +74,13 @@ nav{
     align-items: center;
     position: fixed;
     background-color: var(--colorN--);
-    z-index: 20;
+   
     flex-direction: row;
     width: 100vw;
     height: 12vh;
     padding-right: 7vw;
+    z-index: 20;
+
 }
 
 #navdesk{
