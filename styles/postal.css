@@ -72,10 +72,13 @@ nav{
     margin: 0;
     display: flex;
     align-items: center;
-    
+    position: fixed;
     flex-direction: row;
     width: 100vw;
     padding-right: 7vw;
+    height: 12vh;
+    z-index: 20;
+
 }
 
 #navdesk{
@@ -625,7 +628,7 @@ footer hr{
 /* When screen is on mobile--------------------------------- */
 @media screen and (max-width: 550px)  {
 
-    header{
+    header,nav{
         height: 9.5vh;
         width: 100vw;
         position: fixed ;
@@ -819,7 +822,7 @@ footer hr{
 @media screen and (max-width: 1050px) { /*------------TABLET-------*/
 
 
-    header{
+    header,nav{
         height: 10vh;
         width: 100vw;
         position: fixed ;

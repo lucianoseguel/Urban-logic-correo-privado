@@ -71,8 +71,10 @@ header{
 nav{
     margin: 0;
     display: flex;
+    position: fixed;
     align-items: center;
-    
+    height: 12vh;
+    z-index: 20;
     flex-direction: row;
     width: 100vw;
     padding-right: 7vw;
@@ -625,7 +627,7 @@ footer hr{
 /* When screen is on mobile--------------------------------- */
 @media screen and (max-width: 550px)  {
 
-    header{
+    header,nav{
         height: 9.5vh;
         width: 100vw;
         position: fixed ;
