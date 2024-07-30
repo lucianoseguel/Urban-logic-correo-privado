@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias por confiar en nosotros</title>
+</head>
+<body>
+<style>
+    @font-face {
+    font-family: "Myriad Variable Concept";
+    src: url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.eot");
+    src: url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.svg#Myriad Variable Concept")format("svg");
+}
+
+/* Todas las propiedades CSS */
+:root{
+    --main_font--:"Myriad Variable Concept", sans-serif;
+    --secondary_font--:"Gobold", sans-serif;
+    --primary_font--:  "Myriad Variable Concept", sans-serif;
+
+    --colorA--:#436EAF;
+    --colorN--: black;
+    --colorG--:#6A6055;
+
+    /*-------------------------COLOR PALLETE-------------------------*/
+    
+}
+
+
+
+    *{
+        text-align: center;
+        font-family: var(--main_font--);
+    }
+    body{
+        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    #check{
+        max-width: 30vh;
+        margin: auto;
+    }
+
+    main{
+        align-content: center;
+        margin: auto;
+        
+        height: 100vh;
+        max-width: 80vw;
+        
+    }
+
+</style>
+    
+    <main>
+        <img src="images/viñeta.png" alt="checked" id="check">
+        <h1>¡Gracias por elegirnos!</h1>
+        <p>Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.</p>
+        <p>En Urban Logic, nos esforzamos por ofrecerte el mejor servicio posible y agradecemos tu interés.</p>
+        <h3>VOLVIENDO A HOME...</h3>
+    </main>
+
+<script>
+    let tiempo = 4
+
+function reload(){ //Recargar la pagina con boton refresh
+    if (tiempo > 0) {
+        console.log(tiempo);
+        tiempo--;
+    }else{
+        window.location.href = 'index.html' //VOLVER A MAIN    
+        
+    }
+
+ 
+}
+
+
+
+setInterval(reload,1000)
+</script>
+
+</body>
+</html>
