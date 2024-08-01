@@ -452,7 +452,7 @@ input,select{
 
 #inrow{
     display: grid;
-    gap: 3em;
+    gap: 1em;
     grid-template-columns: 100px 100px;
 }
 
@@ -460,8 +460,14 @@ input,select{
 
 .placeinout{
     margin-top: 1em;
+    max-width: 100px;
 }
 
+#piezas, #tipo{
+  max-width: 100px;
+  border: none;
+  margin: 0;
+}
 
 .solitbutton{
     border: 0;

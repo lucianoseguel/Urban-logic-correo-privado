@@ -234,6 +234,8 @@ section{
 
 
 
+
+
 #portbackground{ /* DEfine images in background */
     display:grid;
     margin: 0;
@@ -256,6 +258,33 @@ section{
     
     
 }
+
+#destinobackground{ /* DEfine images in background */
+    display:grid;
+    margin: 0;
+    width: 100vw;
+    height: 40vh;
+    padding: 0;
+    text-align: center;
+    background-image: url(../images/mapa\ mendoza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    justify-content: center;
+    align-content: start;
+    
+    
+   
+    
+    
+    
+}
+
+
+
+
+
 
 #logoprincipal {  /* define main text*/ 
     
@@ -340,16 +369,18 @@ h2{
 /* Services----------------------------*/
 
 #aside_a {
-    margin-top: 2em;
+    
     display: grid;
     grid-auto-flow: row;
     align-items:start;
     justify-items: center;
     justify-content: space-evenly;
-    
-    
-    grid-template-columns: 35vw 35vw ;
-    grid-template-rows: auto ;
+    max-width: 70vw;
+    margin: auto;
+    margin-top: 2em;
+    grid-template-columns: auto auto ;
+    row-gap: 5em;
+   
     
 }
 
@@ -469,10 +500,12 @@ h2{
 .generalmap {
     display: grid;
     grid-template-columns: 50vw 50vw; 
-    margin-top: 0;
-    height: fit-content;
-    padding: 0;
     
+    margin-top: 0;
+    
+    
+    padding: 0;
+    margin-bottom: 100px;
     justify-content: center;
     
     align-items: center;
@@ -487,9 +520,10 @@ h2{
     display: flex;
     overflow: hidden;
     width: 600px;
-    height: 600px;
+    height: 400px;
     justify-items: center;
-    align-items: center;
+    align-items:center ;
+
 }
 
 
@@ -503,6 +537,7 @@ h2{
     height: auto;
     width: 200px;
     background-color: none;
+    padding-bottom: 70px;
     
     
 }
@@ -791,9 +826,9 @@ footer hr{
 
     #aside_a{
 
-
+    max-width: 100vw;
     display: block;
-    justify-content: center;
+    justify-items: center;
     clear: both;
         
     }
@@ -801,6 +836,7 @@ footer hr{
 
     section{
         padding: 10px;
+        
         
     } 
 
