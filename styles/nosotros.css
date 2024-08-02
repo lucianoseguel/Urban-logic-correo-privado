@@ -228,37 +228,9 @@ section{
     background-color: whitesmoke;
     margin: 0;
     padding: 1px;
-    
  }
 
 
-
-
-
-
-
-#portbackground{ /* DEfine images in background */
-    display:grid;
-    margin: 0;
-    width: 100vw;
-    height: 90vh;
-    padding: 0;
-    text-align: center;
-    background-image: url(../images/carreteprincipal\ compr.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    grid-template-columns: 30vw 30vw;
-    grid-template-rows: 20vw ;
-    justify-content: center;
-    align-content: center;
-    
-    
-   
-    
-    
-    
-}
 
 #destinobackground{ /* DEfine images in background */
     display:grid;
@@ -267,7 +239,7 @@ section{
     height: 40vh;
     padding: 0;
     text-align: center;
-    background-image: url(../images/mapa\ mendoza.jpg);
+    background-image: url(../images/about-us-image-back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -369,227 +341,38 @@ h2{
 
 /* Services----------------------------*/
 
-#aside_a {
-    
-    display: grid;
-    grid-auto-flow: row;
-    align-items:start;
-    justify-items: center;
-    justify-content: space-evenly;
-    max-width: 70vw;
-    margin: 2em auto 4em auto;
-   
-    grid-template-columns: auto auto ;
-    row-gap: 5em;
-   
+
+/* ---------------------------------------parrafo nosotros */
+
+
+#aboutus{
+    max-width: 700px;
+    font-family: var(--primary_font--);
+    margin: auto auto 4em auto;
     
 }
 
-.box_services{
-
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 25vw;
-    
-    
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: space-between;
-    flex-grow: 1;
-    overflow: hidden;
-    border-radius: 22px;
-    position: relative;
-    box-shadow: 0 0  50px rgba(0, 0, 0, 0.3) ;
-
-
-    
-}
-
-.img_services{
-    width: 80px;
-    padding: 15px;
-    display: inline;
-    margin: 1rem;
-    border: 2px solid var(--colorA--);
-    border-radius: 50%;
-   
-    filter: hue-rotate(182) ;
-    overflow: visible;
-
-}
-
-
-
-.descripiton_services{
-    font-family: var(--secondary_font--);
-    font-size: 1.4vw;
-    text-align: center;
-    
-    fill: var(--colorA--);
-    font-weight: 300;
-    
-   
-}
-
-
-.box_services ul{
-    margin: 2rem 0;
-    
-    list-style-type: none;
-    padding-left: 2rem;
-    
-    display: flex;
-    
-    flex-direction: column;
-    
-}
-
-
-
-
-.box_services li{
+#aboutus p{
     font-family: var(--main_font--);
-    text-align: left;
-    display: block;
-    padding-left: 2rem;
-    background-image: url(../images/viñeta.png);
-    margin: 1em 0;
-    background-position: 0 0;
-    background-size: 1.6rem 1.6rem;
-    max-width: 230px;
-    background-repeat: no-repeat;
-}
-
-
-.solitbutton{
-   
-    color: whitesmoke;
-    text-align: center;
-    font-family: var(--main_font--);
-    font-weight: 700;
-    cursor: pointer;
-    margin: 2em;
-    padding: 10px 15px 7px 15px;
-    background-color: var(--colorA--);
-    border-radius: 10px;
-    box-shadow: 0 0  10px rgba(0, 0, 0, 0.3) ;
-    transition: all 0.3s ease;
-
-}
-
-.solitbutton:hover{
-    background-color: var(--colorG--);
-}
-
-
-
-
-/* ---------------------------------------titulo de ubicacion de envios */
-#obj2h2{
-    display: block;
-    color: var(--colorA--);
-    font-weight: 550;
-    font-family: var(--secondary_font--);
-    
-    
-    padding: 0;
-
-}
-
-.generalmap {
-    display: grid;
-    grid-template-columns: 50vw 50vw; 
-    
-    margin-top: 0;
-    
-    
-    padding: 0;
-    margin-bottom: 100px;
-    justify-content: center;
-    
-    align-items: center;
-    
-  
-  
-   
-}
-
-.svgmap{
-    margin: auto;
-    display: flex;
-    overflow: hidden;
-    width: 600px;
-    height: 400px;
-    justify-items: center;
-    align-items:center ;
-
-}
-
-
-
-.generalmap svg{
-    display: flex;
-    margin: 20rem auto auto auto;
-    transform: scale(4);
-    justify-items: center;
-    align-items: center;
-    height: auto;
-    width: 200px;
-    background-color: none;
-    padding-bottom: 70px;
-    
-    
-}
-
-.generalmap path{
-    fill: whitesmoke;
-    stroke: var(--colorN--);
-    stroke-width: 1px ;
-    
-}
-
-.generalmap .soon:hover {
-    transition: all 0.4s;
-    fill: var(--colorG--);
-    
-}
-
-.generalmap .chosed{
-    transition: all 0.4s;
-    fill: var(--colorA--);
-}
-
-
-
-.generalmap p{
-    display: block;
-   
-    padding: 1em;
-    width: 500px;
-    font-family: var(--main_font--);
-    font-weight: 400;
     font-size: large;
+    line-height: 30px;
+    color: var(--colorN--);
 }
 
+#aboutus img{
+    display: flex;
+    float: right;
+    max-width: 22vw;
+    padding: 1em;
+    clear: both;
+    border-radius: 20px;
+}
 
 #span1{
     color: var(--colorA--);
     font-family: var(--main_font--);
-    font-weight: 700;
 }
 
-#span2{
-    color: var(--colorG--);
-    font-family: var(--main_font--);
-    font-weight: 700;
-}
-
-
-#mappng{
-    display: none;
-}
 
 
 /* footer -----------------------------------*/
@@ -608,29 +391,6 @@ footer{
   
     
 }
-
-#aboutus{
-    max-width: 700px;
-    font-family: var(--primary_font--);
-    margin: auto;
-    
-}
-
-#aboutus p{
-    font-family: var(--main_font--);
-    font-size: large;
-    line-height: 30px;
-}
-
-#aboutus img{
-    display: flex;
-    float: right;
-    max-width: 22vw;
-    padding: 1em;
-    clear: both;
-    border-radius: 20px;
-}
-
 
 
 
@@ -839,7 +599,6 @@ footer hr{
         padding: 10px;
         
         
-        
     } 
 
 
@@ -906,79 +665,11 @@ footer hr{
 
 
 
-/*-------------------MAPA------------------------*/
 
-#obj2h2{
-    margin-top: 0;
-}
-
-
-.generalmap{
-
-    display: flex;
-    
-    flex-direction: column;
-    justify-items: center;
-    
-    
-    margin-bottom: 150px;
-   
-}
-
-.generalmap svg{
-    
-    margin: auto;
-    transform: scale(1);
-    
-   
-    
-    
-}
-
-
-/*--------------- contenedor del svg display none------------*/
-
-
-
-.svgmap{
-    
-    max-width: 100vw;
-    margin: auto;
-    width: 300px;
-    justify-content: center;
-    display: none;
-   
-}
-
-.generalmap p{
-    display: block;
-    max-width: 80vw;
-    
-    clear: both;
-    font-family: var(--main_font--);
-    font-weight: 400;
-    font-size: large;
-}
-
-
-    .generalmap .soon {
-        fill: var(--colorG--);
-        cursor:not-allowed;
-    }
-
-    .generalmap .chosed{
-        fill: var(--colorA--);
-    }
 
 
 /*--------------------configuracion mapa en telefono png -----------------------*/
 
-    #mappng{
-        margin: 0;
-        max-width: 90vw;
-        display: flex;
-
-    }
 
     
 
