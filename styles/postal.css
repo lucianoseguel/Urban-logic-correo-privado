@@ -453,7 +453,7 @@ input,select{
 #inrow{
     display: grid;
     gap: 1em;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: repeat(2,auto);
 }
 
 /*Configuracion de las cajas de partida y destino para que queden al lado una a lo otra en el form*/ 
