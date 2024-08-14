@@ -81,7 +81,7 @@
 
     </div>
     
-    <form action="/submit_contact" method="post">
+    <form action="https://formsubmit.co/lucianitoseguel@gmail.com" method="POST" >
         <legend style=" font-family: var(--secondary_font--);">envianos tus datos</legend>
         <label for="name">Nombre y Apellido *</label>
         <input type="text" id="name" name="name" required>
@@ -121,6 +121,16 @@
         
         <label for="Mensaje">Comentarios:</label>
         <textarea id="Mensaje" name="Mensaje" rows="3" ></textarea>
+
+        <input type="hidden" name="_next" value="https://lucianoseguel.github.io/Urban-logic-correo-privado/thanks.html">
+        <input type="hidden" name="_captcha" value="false">
+        
+        
+      
+        <input type="hidden" name="_subject" value="Cotizacion de paqueteria">
+        <input type="hidden" name="_template" value="table">
+
+        
         
         <button type="submit" class="solitbutton">Solicitar Cotización</button>
     </form>
