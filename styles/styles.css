@@ -63,6 +63,7 @@ body, html {
 .nav-link{
     
 font-family: var(--main_font--);
+font-size: x-large;
 
 }
 
@@ -132,9 +133,6 @@ section{
     grid-template-rows: 20vw ;
     justify-content: center;
     align-content: center;
-    
-    
-   
     
     
     
