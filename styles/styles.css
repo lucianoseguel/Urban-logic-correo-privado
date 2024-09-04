@@ -61,11 +61,26 @@ body, html {
 
 
 .nav-link{
-    
+align-items: center;
+margin: auto;
 font-family: var(--main_font--);
 
-
 }
+
+
+.nav-item{
+align-content: center;
+}
+
+
+.dropdown-menu{
+    background-color: none;
+}
+
+.dropdown-item{
+    font-family: var(--main_font--);
+}
+
 
 .offcanvas{
     max-width: 80vw;
