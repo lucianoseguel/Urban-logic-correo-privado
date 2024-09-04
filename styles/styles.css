@@ -49,7 +49,7 @@ body, html {
     padding: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    
+    background-color: whitesmoke;
   }
 
 .navbar{
@@ -474,6 +474,8 @@ h2{
 
 footer{
     padding: 0 15vw;
+    margin-top: 0;
+    background-color: whitesmoke;
 }
 
 .mb-3{
@@ -766,7 +768,9 @@ footer{
     }
 
     footer{
-        padding: 0 2vw;
+        padding: 0 30%;
+        margin-top: 0;
+
     }
     
  

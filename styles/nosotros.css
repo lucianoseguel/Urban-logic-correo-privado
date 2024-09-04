@@ -499,16 +499,11 @@ footer{
 
 
  
-    footer a{
-        display: flex;
-        align-items: center;
-        max-width: 4vh;
-        margin: 0 10px;
-    
-        
-        fill: var(--colorA--);
+    footer{
+        padding: 0 30%;
+        margin-top: 0;
+
     }
-        
     
 
 
