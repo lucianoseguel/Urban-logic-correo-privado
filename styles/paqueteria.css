@@ -50,171 +50,60 @@ body, html {
     padding: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: whitesmoke;
     
   }
 
 
-header{
-    
-    height: 12vh;;
-    width: 100vw;
-    background-color: var(--colorN--);
-    align-items: center;
-    display: flex;
-    
-   
-    
-}
-
-
-
-nav{
-    margin: 0;
-    display: flex;
+  .navbar{
     position: fixed;
-    align-items: center;
-    background-color: var(--colorN--);
-    height: 12vh;
-    z-index: 20;
-    flex-direction: row;
+    z-index: 100;
     width: 100vw;
-    padding-right: 7vw;
+    padding: 0  3rem ;
 }
 
-#navdesk{
 
-padding-top: 2px;
-display: grid;
-grid-auto-flow: column;
-margin: 0;
-gap: 3em;
+.nav-link{
+    
+font-family: var(--main_font--);
 
 
 }
 
+#offcanvasNavbar2Label{
+    font-family: var(--secondary_font--);
+}
 
-
-    
-
-
-
-nav a{
-    
-    
-    display: flex;
-    
-    flex: 1;
-    flex-grow: 1;
-    color: var(--colorN--);
-    
-    font-family: var(--primary_font--);
-    
-    
+.offcanvas{
+    max-width: 80vw;
+    text-align: center;
 }
 
 
 
-
-.sidebar{
-    position:fixed;
-    top: 0;
-    margin: 0;
-    right: -130vw;
-    height: 100vh;
-    
-    z-index: 999;
-    background-color: var(--colorN--);
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    
-    font-size: 20px;
-    opacity: 0.95;
-    border-radius: 30px;
-
-    transition: all 0.3s ease;
-    
-    
-}
-
-.sidebar--show{
-    
-    right: 0;
-    border-radius: 0;
-    
-}
-
-
-
-
-
-.sidebar li button,.sidebar li a {
-    align-content: center;
-    justify-content: center;
-    transition: all 0.3s ease-in;
-}
-
-
-
-
-.menu-button{
-    
-display: none;
-
-
-}
-
-#closebar{
-    display: flex;
-    height: 10vh;
-    width: 100vw;
+.bi-list-nested{
+    width: 32px;
+    height: 32px;
     fill: var(--colorA--);
-    align-items: center;
-    justify-content: end;
-    padding-right: 5vw;
 }
 
 
 
-button {
-background: none;
-cursor: pointer;
-}
+.navbar-toggler{
+    transition:all  .1s ease-in-out;
+
+}         
 
 
 
 
-.hov{
-    display: flex;
-    color: white;
+
+#icoprincipal{
+    max-width: 50px;
+    padding: 10%;
     
-    border-style: none;
-    border-bottom: 2px solid var(--colorN--);
-    padding: 10px 10px;
-    
-
     
 }
-
-.hov:hover {
-    transition: 0.5s ease;
-    border-bottom: 2px solid var(--colorA--);
-    padding: 10px 10px;
-    
-}
-
-
-.iconimg{
-    max-height: 10vh;
-    margin-top: 2vh;
-    margin: 0 40px;
-    padding: 3px;
-    display: inline;
-    
-}
-
 
 
 
@@ -503,100 +392,18 @@ input,select{
 /* footer -----------------------------------*/
 
 footer{
-    background-color: var(--colorN--);
-    
-    
-    
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    color: whitesmoke;
-   
-  
-    
+    padding: 0 15vw;
+    margin-top: 0;
+    background-color: whitesmoke;
 }
 
-#aboutus{
-    max-width: 700px;
-    font-family: var(--primary_font--);
-    margin: auto;
-    
-}
-
-#aboutus p{
-    font-family: var(--main_font--);
-    font-size: large;
-    line-height: 30px;
-}
-
-#aboutus img{
-    display: flex;
-    float: right;
-    max-width: 22vw;
-    padding: 1em;
-    clear: both;
-    border-radius: 20px;
-}
-
-
-
-
-#contactus{
-    font-size:xx-large;
-}
-
-.socialmedia{
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-footer a{
-    display: flex;
-    align-items: center;
-    max-width: 3vw;
-    margin: 0 10px;
-
-    
-    fill: var(--colorG--);
-    
-    
-
-}
-
-
-#copyright{
-    text-align: center;
+.mb-3{
     font-family: var(--main_font--);
 }
-
-
-
-
-
-#parraffooter{
-    max-width: 400px;
-    font-size: larger;
-    line-height: 2;
-    color: white;
-    font-family: var(--primary_font--);
-    text-align: left;
-    
+#icodown{
+    max-width: 32px;
+    max-height: 32px;
 }
-
-footer hr{
-    margin: auto;
-    width: 90vw;
-    display: block;
-    
-}
-
 
 
 
@@ -627,41 +434,23 @@ footer hr{
 
 
 /* When screen is on mobile--------------------------------- */
-@media screen and (max-width: 550px)  {
+@media screen and (max-width: 740px)  {
 
-    header,nav{
-        height: 9.5vh;
+
+    .navbar{
+
+        position: fixed;
+        font-family: var(--main_font--);
+        z-index: 100;
         width: 100vw;
-        position: fixed ;
-        z-index: 50;
-    }
+        padding: 0  0 ;
 
-    .hideonmobile{
-        display: none;
-    }
+      
+      }
 
-    
-    .iconimg{
-        max-height: 7vh;
-        margin-top: 2vh;
-        margin: 1em;
-        margin-left: 2em;
-        padding: 0;
-    }
-
-
-    .menu-button{
-        display: flex;
-        fill: var(--colorA--);
-        
-        }
-
-    
-    .hov{
-
-    margin: 1em 0;
-    
-    }
+      .nav-link{
+        font-size: x-large;
+      }
 
 /*-------PRINCIPAL-------------*/
 
@@ -789,18 +578,6 @@ footer hr{
 
 
  
-    footer a{
-        display: flex;
-        align-items: center;
-        max-width: 4vh;
-        margin: 0 10px;
-    
-        
-        fill: var(--colorA--);
-    }
-        
-    
-
 
 
     .whatsapp-btn {
@@ -813,140 +590,17 @@ footer hr{
     }
     
 
+    footer{
+        padding: 0 30%;
+        margin-top: 0;
+
+    }
+    
+ 
+    
+
 
 
 }
 
 
-
-
-@media screen and (max-width: 1050px) { /*------------TABLET-------*/
-
-
-    header{
-        height: 10vh;
-        width: 100vw;
-        position: fixed ;
-        z-index: 50;
-    }
-
-
-    
-    .iconimg{
-        max-height: 7vh;
-        margin-top: 2vh;
-        margin: 1em;
-        margin-left: 2em;
-        padding: 0;
-    }
-
-
-  
-
-    
-
-/*-------PRINCIPAL-------------*/
-
-#portbackground{ /* DEfine images in background */
-    display:flex;
-    margin: 0;
-    width: 100vw;
-    height: 50vh;
-    padding: 0;
-    text-align: center;
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    justify-items: center;
-    align-items: center;
-    
-   
-    
-    
-    
-}
-
-#logoprincipal {  /* define main text*/ 
-    
-    display: flex;
-    
-   
-    width: 20vh;
-    
-    
-}
-
-
-
-.maintext{
-   
-    padding: 0;
-    display: inline;
-    font-size: auto;
-    
-}
-
-
-
-
-/* Cuerpo -------------------------------*/
-
-    #descripcion{
-        max-width: 70vw;
-        margin: auto;
-        padding: 0;
-       display: flex;
-       flex: 1;
-        margin-bottom: 4em;
-       
-    }
-
-    .formulario1
-    {
-
-    flex-direction: column;
-    max-width: 95vw;
-    display: flex;
-    justify-items: center;
-    clear: both;
-        
-    }
-
-
-    section{
-        padding: 10px;
-        
-    } 
-
-
-    
-
-    form{
-        max-width: 90vw;
-        display: grid;
-        flex: 1;
-        padding: 3rem;
-        flex-direction: column;
-        text-align: left;
-       
-        
-        margin: 1em auto 5em auto;
-        align-items: center;
-
-        overflow: hidden;
-        border-radius: 22px;
-        position: relative;
-        box-shadow: 0 0  50px rgba(0, 0, 0, 0.3) ;
-    
-    
-        
-    }
-
-    
-
-
-
-
-
-}

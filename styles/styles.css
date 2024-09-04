@@ -487,10 +487,6 @@ footer{
 }
 
 
-#brend{
-    display: none;
-}
-
 
 /*----------------------Wtsp Button-----------------*/
 .whatsapp-btn {
@@ -515,7 +511,7 @@ footer{
 
 
 /* When screen is on mobile--------------------------------- */
-@media screen and (max-width: 550px)  {
+@media screen and (max-width: 740px)  {
 
 
     .navbar{
