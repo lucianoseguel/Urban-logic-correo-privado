@@ -63,7 +63,7 @@ body, html {
 .nav-link{
     
 font-family: var(--main_font--);
-font-size: x-large;
+
 
 }
 
@@ -485,6 +485,11 @@ footer{
 }
 
 
+#brend{
+    display: none;
+}
+
+
 /*----------------------Wtsp Button-----------------*/
 .whatsapp-btn {
     position: fixed;
@@ -507,8 +512,6 @@ footer{
 }
 
 
-
-
 /* When screen is on mobile--------------------------------- */
 @media screen and (max-width: 550px)  {
 
@@ -522,6 +525,10 @@ footer{
         padding: 0  0 ;
 
       
+      }
+
+      .nav-link{
+        font-size: x-large;
       }
 
 
@@ -776,7 +783,10 @@ footer{
         z-index: 10;
     }
     
-
+    #brend{
+        display: block;
+    }
 
 
 }
+
