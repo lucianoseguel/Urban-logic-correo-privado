@@ -6,7 +6,12 @@ function contactform() {
 
 function sended(){
     alert('Enviado correctamente')
+    location.reload();
 }
+function span() {
+    location.reload();
+}
+
 
 
 
@@ -15,8 +20,6 @@ function sended(){
 const masinfo = document.querySelector('#btn-paq')
 
 const modal = document.querySelector('#modal')
-
-const enviar = document.querySelector('#submit')
 
 
 let formulario1 = document.getElementById('todoelform')
