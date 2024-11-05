@@ -40,13 +40,14 @@
     text-decoration: none;
     margin: 0;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: black;
 
 }
 
 
 body, html {
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
     overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: whitesmoke;
@@ -488,9 +489,12 @@ h2{
 /* footer -----------------------------------*/
 
 footer{
-    padding: 0 15vw;
+    padding: 0 15vw ;
+    padding-bottom: 0;
     margin-top: 0;
-    background-color: whitesmoke;
+    background-color: var(--colorN--);
+    height: auto;
+    margin: 0 !important;
 }
 
 .mb-3{
