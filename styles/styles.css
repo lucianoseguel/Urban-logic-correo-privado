@@ -503,8 +503,12 @@ footer{
 #icodown{
     max-width: 32px;
     max-height: 32px;
+    fill: whitesmoke;
 }
 
+.my-4{
+    margin-bottom: 0 !important;
+}
 
 
 /*----------------------Wtsp Button-----------------*/

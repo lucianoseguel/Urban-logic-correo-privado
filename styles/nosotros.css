@@ -273,6 +273,12 @@ h2{
 
 footer{
     padding: 0 15vw;
+    background-color: var(--colorN--);
+    margin: 0 !important;
+}
+
+.my-4{
+    margin-bottom: 0 !important;
 }
 
 .mb-3{

@@ -402,7 +402,11 @@ input,select{
 footer{
     padding: 0 15vw;
     margin-top: 0;
-    background-color: whitesmoke;
+    background-color: var(--colorN--);
+}
+
+.my-4{
+    margin-bottom: 0 !important;
 }
 
 .mb-3{
