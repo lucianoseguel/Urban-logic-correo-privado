@@ -414,7 +414,10 @@ footer{
 }
 
 
-
+.text-body-secondary svg{
+    fill: grey;
+    color: grey;
+}
 
 
 /*----------------------Wtsp Button-----------------*/

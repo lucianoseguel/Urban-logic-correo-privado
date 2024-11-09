@@ -417,6 +417,11 @@ footer{
     max-height: 32px;
 }
 
+.text-body-secondary svg{
+    fill: grey;
+    color: grey;
+}
+
 
 
 /*----------------------Wtsp Button-----------------*/
