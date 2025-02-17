@@ -294,7 +294,10 @@ footer{
     display: none;
 }
 
-
+.text-body-secondary svg{
+    fill: grey;
+    color: grey;
+}
 
 
 

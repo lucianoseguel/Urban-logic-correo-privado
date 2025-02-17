@@ -503,7 +503,7 @@ footer{
 
 .mb-3{
     font-family: var(--main_font--);
-    fill: var(--colorA--);
+    color: var(--colorA--);
 }
 #icodown{
     max-width: 32px;
@@ -513,6 +513,11 @@ footer{
 
 .my-4{
     margin-bottom: 0 !important;
+}
+
+.text-body-secondary svg{
+    fill: grey;
+    color: grey;
 }
 
 
