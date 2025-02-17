@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Dashboard | Urban Logic </title>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles/informes.css">
+
+    <link rel="icon" href="images/icono.png" type="image/png">
+</head>
+<body>
+  <!-- ========== Start NAVBAR ========== -->
+  <nav x-data="{ isOpen: false }" class="bg-white shadow dark:bg-gray-800">
+    <div class="container px-6 py-4 mx-auto">
+        <div class="lg:flex lg:items-center">
+            <div class="flex items-center justify-between">
+                <a href="#">
+                    <img class="w-auto h-6 sm:h-7" src="images/icono.png" alt="">
+                </a>
+
+                <!-- Mobile menu button -->
+                <div class="flex lg:hidden">
+                    <button x-cloak @click="isOpen = !isOpen" type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+                        <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                        </svg>
+                
+                        <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full ']" class="absolute inset-x-0 z-20 flex-1 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center lg:justify-between">
+                <div class="flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:px-16 lg:-mx-4 lg:flex-row lg:items-center listanav">
+                    <a href="#" class="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200 active">URBAN LOGIC</a>
+                    <a href="#" class="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200">downloads</a>
+                    
+                </div>
+    
+                
+            </div>
+        </div>
+    </div>
+</nav>
+  <!-- ========== End NAVBAR ========== -->
+  
+<!-- ========== Start DASHBOARD ========== -->
+        
+    <main>
+      <h1 id="title">PANEL DE ENTREGA</h1>
+      
+      <hr><br>
+      <!--
+  Heads up! 👋
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+<form action="" id="formulario">
+
+<!--Casilla nomrbe y apellido-->
+  <div>
+    <label for="username" class="block text-sm text-black-500 dark:text-black-700">Nombre y Apellido</label>
+
+    <input id="name" name="username" type="text" placeholder="Juan Pérez" class="block  mt-2 w-full placeholder-gray-400/70 dark:placeholder-smoke-500 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 bg-gray-900 dark:text-black-300 dark:focus:border-blue-300" />
+</div>
+<br>
+<!--Casilla de domicilio-->
+<div>
+  <label for="adress" class="block text-sm text-black-500 dark:text-black-700">Domicilio</label>
+
+  <input id="domicilio" name="domicilio" type="text" placeholder="Av San Martin 1234" class="block  mt-2 w-full placeholder-gray-400/70 dark:placeholder-smoke-500 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 bg-gray-900 dark:text-black-300 dark:focus:border-blue-300" />
+</div>
+<br>
+<!--Casilla de fecha-->
+<div>
+  <label for="date" class="block text-sm text-black-500 dark:text-black-700">Fecha</label>
+
+  <input type="date" name="fecha" class="block  mt-2 w-full placeholder-gray-400/70 dark:placeholder-smoke-500 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 bg-gray-900 dark:text-black-300 dark:focus:border-blue-300" />
+</div>
+<br>
+<!--Casilla de hora-->
+<div>
+  <label for="time" class="block text-sm text-black-500 dark:text-black-700">Hora</label>
+
+  <input type="time" name="hora" placeholder="Juan perez" class="block  mt-2 w-full placeholder-gray-400/70 dark:placeholder-smoke-500 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 bg-gray-900 dark:text-black-300 dark:focus:border-blue-300" />
+</div>
+<br>
+<!--Casilla de imagen-->
+<div>
+  <label for="file" class="block text-sm text-black-500 dark:text-black-700">FOTO</label>
+
+  <input type="file" id="foto" name="foto" accept="image/*" placeholder="Juan perez" class="block  mt-2 w-full placeholder-gray-400/70 dark:placeholder-smoke-500 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 bg-gray-900 dark:text-black-300 dark:focus:border-blue-300" />
+</div>
+
+
+
+</form><button id="generador" >PDF</button>
+<img src="" alt="" id="contenedorfoto">
+
+    </main>
+
+<!-- ========== End DASHBOARD ========== -->
+
+    <script type="module" src="scripts/convertPDF.js"></script>
+
+
+
+
+    
+</body>
+</html>

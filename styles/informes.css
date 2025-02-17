@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Gobold';
+    src: url(../font/Gobold\ Regular.otf);
+    font-variation-settings: 'wght' 400, 'wdth' 100;
+      
+}
+
+
+@font-face {
+    font-family: "Myriad Variable Concept";
+    src: url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.eot");
+    src: url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.svg#Myriad Variable Concept")format("svg");
+}
+
+/* Todas las propiedades CSS */
+:root{
+    --main_font--:"Myriad Variable Concept", sans-serif;
+    --secondary_font--:"Gobold", sans-serif;
+    --primary_font--:  "Myriad Variable Concept", sans-serif;
+
+    --colorA--:#436EAF;
+    --colorN--: black;
+    --colorG--:#6A6055;
+
+    /*-------------------------COLOR PALLETE-------------------------*/
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: whitesmoke;
+}
+
+#title{
+    margin: 2em;
+    font-size: x-large;
+    color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: auto; 
+    max-width: 80vw;
+}
+
+nav{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    align-content: center;
+}
+
+
+.active {
+    
+}
+hr{
+    color: black;
+padding: 0 auto;    
+text-align: center;
+}
+
+
+h1{
+    padding-top: 10vh;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .listanav{
+       gap: 1em; 
+    }
+}
+
+
