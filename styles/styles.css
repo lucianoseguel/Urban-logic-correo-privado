@@ -250,6 +250,7 @@ h2{
 #objh2{
     color: var(--colorA--);
     font-weight: 550;
+    font-size: large;
     font-family: var(--secondary_font--);
     display: block;
 }
