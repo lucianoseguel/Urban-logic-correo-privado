@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Gobold';
+    src: url(../font/Gobold\ Regular.otf);
+    font-variation-settings: 'wght' 400, 'wdth' 100;
+      
+}
+ 
+
+@font-face {
+    font-family: "Myriad Variable Concept";
+    src: url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.eot");
+    src: url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3a86b8ec8855002aad8b288eaba8915d.svg#Myriad Variable Concept")format("svg");
+}
+
+/* Todas las propiedades CSS */
+:root{
+    --main_font--:"Myriad Variable Concept", sans-serif;
+    --secondary_font--:"Gobold", sans-serif;
+    --primary_font--:  "Myriad Variable Concept", sans-serif;
+
+    --colorA--:#436EAF;
+    --colorN--: black;
+    --colorG--:#6A6055;
+
+    /*-------------------------COLOR PALLETE-------------------------*/
+    
+}
+
+
+/* First line------------------------------------*/
+*{
+    box-sizing: border-box;
+    font-family: var(--main_font--);
+    text-decoration: none;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: whitesmoke;
+    
+  }
+
+
+  .navbar{
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    padding: 0  3rem ;
+}
+
+
+.nav-link{
+    
+font-family: var(--main_font--);
+
+
+}
+
+#offcanvasNavbar2Label{
+    font-family: var(--secondary_font--);
+}
+
+.offcanvas{
+    max-width: 80vw;
+    text-align: center;
+}
+
+
+
+.bi-list-nested{
+    width: 32px;
+    height: 32px;
+    fill: var(--colorA--);
+}
+
+
+
+.navbar-toggler{
+    transition:all  .1s ease-in-out;
+
+}         
+
+
+
+
+
+#icoprincipal{
+    max-width: 50px;
+    padding: 10%;
+    
+    
+}
+
+
+
+/*---------------------------------Principal----------------------*/
+
+section{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 1px;
+ }
+
+
+
+
+
+#portbackground{ /* DEfine images in background */
+    display:grid;
+    margin: 0;
+    width: 100vw;
+    height: 40vh;
+    padding: 0;
+    text-align: center;
+    background-image: url(../images/comercios\ adheridos\ 1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-template-columns: 30vw 30vw;
+    grid-template-rows: 20vw ;
+    justify-content: center;
+    align-content: center;
+    
+    
+   
+    
+    
+    
+}
+
+#logoprincipal {  /* define main text*/ 
+    
+    display: block;
+    
+   
+    width: 20vw;
+    
+    
+}
+
+
+#portbackground div{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    align-content: center;
+}
+
+
+
+
+.maintext{
+    margin: auto;
+    padding: 0;
+    display: inline;
+    font-size: auto;
+    color: black;
+}
+
+#rnsp{
+    font-size:large;
+    color: black;
+
+}
+
+
+
+
+
+
+
+
+
+h2{
+    text-align: center;
+    font-family: var(--primary_font--);
+    margin: 0;
+    padding: 6%;
+    font-size: 2em;
+    font-weight: 300;
+    display: block;
+}
+
+
+#primertitulo{
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    color: white;
+
+}
+
+#objh2{
+    color: var(--colorA--);
+    font-weight: 550;
+    font-family: var(--secondary_font--);
+    display: block;
+    text-align: center;
+    font-size: 5vh;
+
+    
+}
+
+#descripcion{  /* primer parrafo del form */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    
+    margin: auto;
+    text-align: left;
+    font-family: var(--main_font--);
+    line-height: 2.5em;
+    font-size: larger;
+    
+    
+}
+
+.listaserv{
+
+    display:block ;
+    overflow: visible;
+    text-align: left;
+    list-style-type: circle;
+
+    
+}
+
+.listaserv li{
+    text-align: left;
+    list-style-type: circle;
+    
+}
+
+
+/* ---------------------------Lugares y empresas----------------------------*/
+
+.contactbutton{
+    background-color: var(--colorA--);
+    padding: 7px 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+
+  
+}
+
+.contactlist{
+    margin: auto;
+    padding: 4%;
+
+}
+
+/* ---------------------------ESTILO FORMULARIO----------------------------*/
+
+
+.formulario1 {
+    
+    
+   max-width: 70vw;
+  
+    margin-top: 6em;
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    justify-items: center;
+    margin: auto;
+
+    color: black;
+   
+ 
+    z-index: 20;
+    
+   
+}
+
+/* ---------------------------Lugares y empresas----------------------------*/
+
+
+
+
+form{
+    background-color: whitesmoke;
+    max-width: 40vw;
+    display: grid;
+    flex: 1;
+    padding: 3rem;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    align-items: center;
+    
+    flex:1;
+    
+  
+    position: relative;
+    box-shadow: 0 0  50px rgba(0, 0, 0, 0.3) ;
+
+
+    
+}
+
+legend{
+    font-size: larger;
+    margin-bottom: 1em;
+    color: black;
+}
+
+input,label,select,#submit,option,textarea {
+    font-family: var(--main_font--);
+    font-size: large;
+    align-items: center;
+    color: black;
+}
+input,textarea{
+    margin:2px;
+    border: 0 solid;
+    background-color:rgb(218, 218, 218);
+    border-radius: 10px;
+    padding: 0.5em;
+    
+}
+
+label{
+    margin-top: 1em;
+}
+
+option{
+    font-size: large;
+}
+
+input,select{
+    height: 2em;
+    background-color:rgb(218, 218, 218);
+    border-radius: 10px;
+}
+
+ #Desde, #Hasta{
+    max-width: 110px;
+    display: block;
+    text-align: center;
+    
+}
+
+#inrow{
+    display: grid;
+    gap: 1em;
+    max-width: 40vw;
+    grid-template-columns: repeat(2,auto);
+    
+}
+
+/*Configuracion de las cajas de partida y destino para que queden al lado una a lo otra en el form*/ 
+
+.placeinout{
+    margin-top: 1em;
+    margin-right: 0;
+}
+
+
+.solitbutton{
+    border: 0;
+    font-size: large;
+    color: whitesmoke;
+    text-align: center;
+    font-family: var(--main_font--);
+    font-weight: 700;
+    cursor: pointer;
+    margin: 2em;
+    padding: 10px 15px 7px 15px;
+    background-color: var(--colorA--);
+    border-radius: 10px;
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.3) ;
+    transition: all 0.3s ease;
+
+}
+
+.solitbutton:hover{
+    background-color: var(--colorG--);
+}
+
+
+
+#span1{
+    color: var(--colorA--);
+    font-family: var(--main_font--);
+    font-weight: 700;
+}
+
+#span2{
+    color: var(--colorG--);
+    font-family: var(--main_font--);
+    font-weight: 700;
+}
+
+
+
+/* footer -----------------------------------*/
+
+footer{
+    padding: 0 15vw;
+    margin-top: 0;
+    background-color: var(--colorN--);
+
+}
+
+.my-4{
+    margin-bottom: 0 !important;
+}
+
+.mb-3{
+    font-family: var(--main_font--);
+}
+#icodown{
+    max-width: 32px;
+    max-height: 32px;
+}
+
+
+.text-body-secondary svg{
+    fill: grey;
+    color: grey;
+}
+
+
+/*----------------------Wtsp Button-----------------*/
+.whatsapp-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 5vw;
+    background-color: #25D366; /* Color de WhatsApp */
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+    fill: #128C7E; /* Cambia el color al hacer hover */
+}
+
+
+
+
+/* When screen is on mobile--------------------------------- */
+@media screen and (max-width: 740px)  {
+
+
+    .navbar{
+
+        position: fixed;
+        font-family: var(--main_font--);
+        z-index: 100;
+        width: 100vw;
+        padding: 0  0 ;
+
+      
+      }
+
+      .nav-link{
+        font-size: x-large;
+      }
+
+/*-------PRINCIPAL-------------*/
+
+#portbackground{ /* DEfine images in background */
+    display:flex;
+    margin: 0;
+    width: 100vw;
+    height: 60vh;
+    padding: 0;
+    text-align: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    justify-items: center;
+    align-items: center;
+    
+   
+    
+    
+    
+}
+
+#logoprincipal {  /* define main text*/ 
+    
+    display: flex;
+    
+   
+    width: 20vh;
+    
+    
+}
+
+
+#portbackground div{
+    color: white;
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    margin: auto;
+}
+
+.maintext{
+   
+    padding: 0;
+    display: inline;
+    font-size: auto;
+    
+}
+
+
+
+
+
+    
+/* Cuerpo -------------------------------*/
+
+    #descripcion{
+        max-width: 80vw;
+        margin: auto;
+        padding: 0;
+       
+        margin-bottom: 4em;
+        display: block;
+    }
+
+    .formulario1
+    {
+        flex-direction: column;
+    max-width: 90vw;
+    display: flex;
+    justify-content: center;
+    clear: both;
+        
+    }
+
+
+    section{
+        padding: 10px;
+        
+    } 
+
+
+    
+
+    form{
+        max-width: 85vw;
+        display: grid;
+        flex: 1;
+        padding: 3rem;
+        flex-direction: column;
+        text-align: left;
+        margin: auto;
+        
+        
+        align-items: center;
+        
+        flex:1;
+        overflow: hidden;
+        border-radius: 22px;
+        position: relative;
+        box-shadow: 0 0  50px rgba(0, 0, 0, 0.3) ;
+    
+    
+        
+    }
+
+    
+
+/*-------------------MAPA------------------------*/
+
+
+
+    
+
+    #aboutus{
+        max-width: 80vw;
+        font-family: var(--primary_font--);
+        margin: auto;
+        
+    }
+
+
+ 
+
+
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        width: 8vh;
+        padding: 10px;
+        z-index: 10;
+    }
+    
+
+    footer{
+        padding: 0 30%;
+        margin-top: 0;
+
+    }
+    
+ 
+    
+
+
+
+}
+
+
