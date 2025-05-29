@@ -39,8 +39,8 @@
     font-family: var(--main_font--);
     text-decoration: none;
     margin: 0;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    
+
+    color: var(--colorG--);
 
 }
 
@@ -268,157 +268,52 @@ h2{
 
 }
 
-/* ---------------------------ESTILO FORMULARIO----------------------------*/
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: 1fr;
 
 
-.formulario1 {
+
+    margin: auto 1em;
+    padding: 4%;
+    max-width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
     
+    overflow: scroll;
+    gap: 5vw;
     
-   max-width: 70vw;
-  
-    margin-top: 6em;
-    display: flex;
-    flex-direction: row;
-    align-items:start;
+}
+
+.product{
+    width: 70vw;
     justify-items: center;
-    margin: auto;
-
-    color: black;
-   
- 
-    z-index: 20;
-    
-   
-}
-
-/* ---------------------------Lugares y empresas----------------------------*/
-
-
-
-
-form{
-    background-color: whitesmoke;
-    max-width: 40vw;
-    display: grid;
-    flex: 1;
-    padding: 3rem;
-    flex-direction: column;
-    text-align: left;
-    margin: 10px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    align-items: center;
-    
-    flex:1;
-    
-  
-    position: relative;
-    box-shadow: 0 0  50px rgba(0, 0, 0, 0.3) ;
-
-
-    
-}
-
-legend{
-    font-size: larger;
-    margin-bottom: 1em;
-    color: black;
-}
-
-input,label,select,#submit,option,textarea {
-    font-family: var(--main_font--);
-    font-size: large;
-    align-items: center;
-    color: black;
-}
-input,textarea{
-    margin:2px;
-    border: 0 solid;
-    background-color:rgb(218, 218, 218);
-    border-radius: 10px;
-    padding: 0.5em;
-    
-}
-
-label{
-    margin-top: 1em;
-}
-
-option{
-    font-size: large;
-}
-
-input,select{
-    height: 2em;
-    background-color:rgb(218, 218, 218);
-    border-radius: 10px;
-}
-
- #Desde, #Hasta{
-    max-width: 110px;
-    display: block;
     text-align: center;
-    
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 10%;
 }
 
-#inrow{
-    display: grid;
-    gap: 1em;
-    max-width: 40vw;
-    grid-template-columns: repeat(2,auto);
-    
+.product-image{
+    max-width: 25vw;
+    padding: 10px;
 }
 
-/*Configuracion de las cajas de partida y destino para que queden al lado una a lo otra en el form*/ 
-
-.placeinout{
-    margin-top: 1em;
-    margin-right: 0;
+.product-title{
+    font-family:var(--secondary_font--);
 }
 
-
-.solitbutton{
-    border: 0;
-    font-size: large;
-    color: whitesmoke;
-    text-align: center;
-    font-family: var(--main_font--);
-    font-weight: 700;
-    cursor: pointer;
-    margin: 2em;
-    padding: 10px 15px 7px 15px;
-    background-color: var(--colorA--);
-    border-radius: 10px;
-    box-shadow: 0 0  10px rgba(0, 0, 0, 0.3) ;
-    transition: all 0.3s ease;
-
-}
-
-.solitbutton:hover{
-    background-color: var(--colorG--);
-}
-
-
-
-#span1{
-    color: var(--colorA--);
-    font-family: var(--main_font--);
-    font-weight: 700;
-}
-
-#span2{
-    color: var(--colorG--);
-    font-family: var(--main_font--);
-    font-weight: 700;
-}
+/* ---------------------------ESTILO FORMULARIO----------------------------*/
 
 
 
 /* footer -----------------------------------*/
 
 footer{
+
     padding: 0 15vw;
-    margin-top: 0;
+    margin-top: 1em;
+    bottom: 0;
     background-color: var(--colorN--);
 
 }
