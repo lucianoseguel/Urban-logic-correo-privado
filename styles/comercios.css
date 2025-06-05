@@ -270,7 +270,7 @@ h2{
 
 .products-container{
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    grid-template-columns: repeat(2,auto);
     grid-template-rows: 1fr;
 
 
@@ -300,6 +300,7 @@ h2{
 
 .product-image{
     max-width: 25vw;
+    max-height: 80px;
     padding: 10px;
     margin: auto;
 }
@@ -307,6 +308,12 @@ h2{
 .product-title{
     font-family:var(--secondary_font--);
     text-align: center;
+}
+
+.tipo{
+font-family: var(--secondary_font--);
+font-size: 30px;
+margin-top: 1em;
 }
 
 /* ---------------------------ESTILO FORMULARIO----------------------------*/
