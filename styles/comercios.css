@@ -249,6 +249,8 @@ h2{
 
 /* ---------------------------Lugares y empresas----------------------------*/
 
+
+
 .contactbutton{
     background-color: var(--colorA--);
     padding: 7px 10px;
@@ -258,9 +260,70 @@ h2{
     border-radius: 10px;
     color: white;
     text-decoration: none;
-
+    
   
 }
+
+
+
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: 1fr;
+
+
+
+    
+    
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
+    
+    
+    
+}
+
+.product{
+    width: 30vw;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    
+    display: grid;
+    grid-template-rows: 1fr     ;
+    
+    padding: 5%;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 10px;
+    margin: 0 auto;
+    
+}
+
+
+.product-image{
+    max-width: 7vw;
+    
+    padding: 10px;
+    margin: auto;
+}
+
+
+.product-title{
+    font-family:var(--secondary_font--);
+    text-align: center;
+}
+
+.tipo{
+font-family: var(--secondary_font--);
+font-size: 40px;
+margin-top: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+
 
 .contactlist{
     margin: auto;
@@ -271,17 +334,12 @@ h2{
 .products-container{
     display: grid;
     grid-template-columns: repeat(2,auto);
-    grid-template-rows: 1fr;
-
-
-
-    margin: auto 1em;
-    padding: 4%;
-    max-width: 100%;
+    grid-template-rows: 1fr;   
+    
     padding-left: 10vw;
     padding-right: 10vw;
+    overflow: auto;
     
-    overflow-x: auto;
     gap: 5vw;
     
 }
@@ -300,20 +358,12 @@ h2{
 
 .product-image{
     max-width: 25vw;
-    max-height: 80px;
+    
     padding: 10px;
     margin: auto;
 }
 
-.product-title{
-    font-family:var(--secondary_font--);
-    text-align: center;
-}
 
-.tipo{
-font-family: var(--secondary_font--);
-font-size: 30px;
-margin-top: 1em;
 }
 
 /* ---------------------------ESTILO FORMULARIO----------------------------*/
