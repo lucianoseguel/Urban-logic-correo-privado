@@ -19,7 +19,7 @@ window.sr = ScrollReveal();
             });
 
 
-sr.reveal('#encomienda',{
+sr.reveal('#encomienda, #objh2',{
             duration: 900,
             origin: 'left',
             distance: '200px'
@@ -47,30 +47,10 @@ sr.reveal('#postal',{
             
 
 
-//H2 
+//About us
 
-
-/*
-sr.reveal('h2',{
-    duration: 700,
-    origin: 'bottom',
-    distance: '50px'
-    });
-
-sr.reveal('#objetivo',{
-        duration: 700,
-        origin: 'bottom',
-        distance: '150px'
-        });
-    
-
-
-
-sr.reveal('.sidebar',{
-    duration: 500,
-    origin: 'bottom',
-    distance: '200px'
-    });
-
-        
-*/
+sr.reveal('#aboutus',{
+            duration: 1100,
+            origin: 'left',
+            distance: '300px'
+            });

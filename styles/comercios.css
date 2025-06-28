@@ -249,7 +249,9 @@ h2{
 
 /* ---------------------------Lugares y empresas----------------------------*/
 
-
+main{
+    margin-bottom: 10%;
+}
 
 .contactbutton{
     background-color: var(--colorA--);
@@ -317,7 +319,7 @@ h2{
 .tipo{
 font-family: var(--secondary_font--);
 font-size: 40px;
-margin-top: 1em;
+
 }
 
 
@@ -363,6 +365,13 @@ margin-top: 1em;
     margin: auto;
 }
 
+.tipo{
+font-family: var(--secondary_font--);
+font-size: 40px;
+margin-top: 1em;
+}
+
+
 
 }
 
@@ -375,7 +384,7 @@ margin-top: 1em;
 footer{
 
     padding: 0 15vw;
-    margin-top: 1em;
+    margin-top: 5em !important;
     bottom: 0;
     background-color: var(--colorN--);
 

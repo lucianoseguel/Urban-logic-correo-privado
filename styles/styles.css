@@ -250,7 +250,7 @@ h2{
 #objh2{
     color: var(--colorA--);
     font-weight: 550;
-    font-size: large;
+    font-size: 4vh;
     font-family: var(--secondary_font--);
     display: block;
 }
@@ -262,6 +262,45 @@ h2{
     font-family: var(--main_font--);
     line-height: 2.5em;
 }
+
+/***** about *****/ 
+
+#aboutus-container{
+    margin-bottom: 8em;
+}
+
+#aboutus{
+    max-width: 700px;
+    font-family: var(--primary_font--);
+    margin: auto auto 4em auto;
+    
+}
+
+#aboutus p{
+    font-family: var(--main_font--);
+    font-size: large;
+    line-height: 30px;
+    color: var(--colorN--);
+}
+
+#aboutus img{
+    display: flex;
+    float: right;
+    max-width: 22vw;
+    padding: 1em;
+    clear: both;
+    border-radius: 20px;
+}
+
+#span1{
+    color: var(--colorA--);
+    font-family: var(--main_font--);
+}
+
+
+/***** End about *****/
+
+
 
 /* Services----------------------------*/
 
