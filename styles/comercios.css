@@ -335,7 +335,7 @@ font-size: 40px;
 
 .products-container{
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(4,auto);
     grid-template-rows: 1fr;   
     
     padding-left: 10vw;
